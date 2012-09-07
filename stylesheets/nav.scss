@@ -1,6 +1,9 @@
 /* Navigation */
 
-nav {
+#nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
   z-index: 3;
   #symbol {
     background: url(../graphics/sprite-logotype.png) 0px 0px no-repeat;
@@ -15,6 +18,14 @@ nav {
     top: 40px;
     width: 75px;
   }
+  a {
+    color: #fff;
+  }
+  a:hover,
+  a:active,
+  a:focus {
+    border-bottom-color: #fff;
+  }
   ul {
     position: absolute;
     right: 40px;
@@ -23,11 +34,8 @@ nav {
       display: inline-block;
       margin-left: 15px;
       text-transform: uppercase;
-      a {
-        color: #fff;
-        i {
-          text-transform: lowercase;
-        }
+      a i {
+        text-transform: lowercase;
       }
     }
   }
@@ -35,7 +43,7 @@ nav {
 
 /* Transition animations. */
 
-nav {
+#nav {
   opacity: 0;
   -webkit-transition-property: opacity;
      -moz-transition-property: opacity;
@@ -54,7 +62,7 @@ nav {
 /* Once the page is ready. */
 
 body.ready {
-  nav {
+  #nav {
     opacity: 1;
   }
 }

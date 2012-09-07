@@ -1,23 +1,6 @@
-/* Cover page specific styles */
-
-#cover {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-
 /* Transition animations. */
 
-#cover img {
+#home .cover img {
   opacity: 0;
   -webkit-transition-property: opacity;
      -moz-transition-property: opacity;
@@ -32,13 +15,13 @@
        -o-transition-delay: 1s;
           transition-delay: 1s;
 }
-#cover img:nth-child(2) {
+#home .cover img:nth-child(2) {
   -webkit-transition-delay: 10s;
      -moz-transition-delay: 10s;
        -o-transition-delay: 10s;
           transition-delay: 10s;
 }
-#cover img:nth-child(3) {
+#home .cover img:nth-child(3) {
   -webkit-transition-delay: 20s;
      -moz-transition-delay: 20s;
        -o-transition-delay: 20s;
@@ -48,7 +31,7 @@
 /* Once the page is ready. */
 
 body.ready {
-  #cover img {
+  #home .cover img {
     opacity: 1;
   }
 }

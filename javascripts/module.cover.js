@@ -5,7 +5,7 @@
  * @author nuno@savantstudio.co.uk (Nuno Coelho Santos).
  */
 
-function cover(element) {
+ function cover(element) {
 
   el = $(element);
 

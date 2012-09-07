@@ -3,66 +3,95 @@
  * @fileoverview Kent & Curwen cover stylesheet.
  * @author nuno@savantstudio.co.uk (Nuno Coelho Santos).
  */
-/* Baseline Styles */
-/* Type */
-/* Import custom typeface */
-@font-face {
-  font-family: 'Filosita';
-  font-weight: normal;
-  font-style: italic;
-  font-variant: normal;
-  src: local("Filosita"), url(/typefaces/filosita-071211002EmigreWebOnly.eot) format("embedded-opentype"), url(/typefaces/filosita-071211002EmigreWebOnly.eot?#iefix) format("embedded-opentype"), url(/typefaces/filosita-071211002EmigreWebOnly.woff) format("woff"); }
+/* Navigation */
+#nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3; }
+  #nav #symbol {
+    background: url(../graphics/sprite-logotype.png) 0px 0px no-repeat;
+    background-size: 772px 150px;
+    color: transparent;
+    display: inline-block;
+    font-size: 0;
+    height: 150px;
+    left: 40px;
+    padding-bottom: 6px;
+    position: absolute;
+    top: 40px;
+    width: 75px; }
+  #nav a {
+    color: #fff; }
+  #nav a:hover,
+  #nav a:active,
+  #nav a:focus {
+    border-bottom-color: #fff; }
+  #nav ul {
+    position: absolute;
+    right: 40px;
+    top: 157px; }
+    #nav ul li {
+      display: inline-block;
+      margin-left: 15px;
+      text-transform: uppercase; }
+      #nav ul li a i {
+        text-transform: lowercase; }
 
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
-  html body {
-    font-family: 'Filosita', serif;
-    text-transform: none;
-    letter-spacing: 0;
-    font-style: italic; }
-    html body a,
-    html body a:link,
-    html body a:visited,
-    html body a:hover,
-    html body a:active,
-    html body a:focus {
-      text-decoration: none;
-      -webkit-transition-property: border-bottom-color;
-      -moz-transition-property: border-bottom-color;
-      -o-transition-property: border-bottom-color;
-      transition-property: border-bottom-color;
-      -webkit-transition-duration: 0.15s;
-      -moz-transition-duration: 0.15s;
-      -o-transition-duration: 0.15s;
-      transition-duration: 0.15s;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-      border-bottom-color: transparent; }
-    html body a:hover,
-    html body a:active,
-    html body a:focus {
-      cursor: pointer;
-      border-bottom-color: #fff; }
-    html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body nav {
-      font-family: "brandon-grotesque";
-      font-style: normal;
-      text-transform: uppercase;
-      letter-spacing: 3px; }
-    html body nav i {
-      font-family: 'Filosita', serif;
-      text-transform: none;
-      letter-spacing: 0;
-      font-style: italic;
-      -webkit-font-smoothing: subpixel-antialiased;
-      -moz-font-smoothing: subpixel-antialiased;
-      -o-font-smoothing: subpixel-antialiased;
-      font-smoothing: subpixel-antialiased; }
+/* Transition animations. */
+#nav {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 3.75s;
+  -moz-transition-duration: 3.75s;
+  -o-transition-duration: 3.75s;
+  transition-duration: 3.75s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s; }
 
-/* Page header with the brand name on the opening page */
-header {
+/* Once the page is ready. */
+body.ready #nav {
+  opacity: 1; }
+
+/* Transition animations. */
+#home .cover img {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 3.75s;
+  -moz-transition-duration: 3.75s;
+  -o-transition-duration: 3.75s;
+  transition-duration: 3.75s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s; }
+
+#home .cover img:nth-child(2) {
+  -webkit-transition-delay: 10s;
+  -moz-transition-delay: 10s;
+  -o-transition-delay: 10s;
+  transition-delay: 10s; }
+
+#home .cover img:nth-child(3) {
+  -webkit-transition-delay: 20s;
+  -moz-transition-delay: 20s;
+  -o-transition-delay: 20s;
+  transition-delay: 20s; }
+
+/* Once the page is ready. */
+body.ready #home .cover img {
+  opacity: 1; }
+
+/* Page header with the brand name on the home page */
+#header {
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -70,7 +99,7 @@ header {
   width: 1015px;
   height: 80px;
   margin: -40px 0 0 -507.5px; }
-  header h1 {
+  #header h1 {
     margin: 0;
     height: 80px;
     display: block;
@@ -78,7 +107,7 @@ header {
     height: 80px;
     margin: 0; }
 
-header h1 span {
+#header h1 span {
   font-size: 0;
   color: transparent;
   background-position: 0 0;
@@ -91,7 +120,7 @@ header h1 span {
   background-size: 772px 150px !important; }
 
 /* First Character (K) */
-header h1 span:nth-child(1) {
+#header h1 span:nth-child(1) {
   background: url(../graphics/sprite-logotype.png) -350px 0px no-repeat;
   margin: 0 0 0 7px;
   width: 75px;
@@ -102,7 +131,7 @@ header h1 span:nth-child(1) {
   animation: letter1 20s ease-out; }
 
 /* Second Character (E) */
-header h1 span:nth-child(2) {
+#header h1 span:nth-child(2) {
   background: url(../graphics/sprite-logotype.png) -216px 0px no-repeat;
   margin: 0 7px;
   width: 64px;
@@ -113,7 +142,7 @@ header h1 span:nth-child(2) {
   animation: letter2 20s ease-out; }
 
 /* Third Character (N) */
-header h1 span:nth-child(3) {
+#header h1 span:nth-child(3) {
   background: url(../graphics/sprite-logotype.png) -426px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
@@ -124,7 +153,7 @@ header h1 span:nth-child(3) {
   animation: letter3 20s ease-out; }
 
 /* Fourth Character (T) */
-header h1 span:nth-child(4) {
+#header h1 span:nth-child(4) {
   background: url(../graphics/sprite-logotype.png) -281px 0px no-repeat;
   margin: 0 4px;
   width: 68px;
@@ -135,7 +164,7 @@ header h1 span:nth-child(4) {
   animation: letter4 20s ease-out; }
 
 /* Fifth Character (Ampersand) */
-header h1 span:nth-child(5) {
+#header h1 span:nth-child(5) {
   background: url(../graphics/sprite-logotype.png) -76px 0px no-repeat;
   margin: 0 40px 0 44px;
   width: 72px;
@@ -146,7 +175,7 @@ header h1 span:nth-child(5) {
   animation: letter5 20s ease-out; }
 
 /* Sixth Character (C) */
-header h1 span:nth-child(6) {
+#header h1 span:nth-child(6) {
   background: url(../graphics/sprite-logotype.png) -149px 0px no-repeat;
   margin: 0 5px 0 6px;
   width: 66px;
@@ -157,7 +186,7 @@ header h1 span:nth-child(6) {
   animation: letter6 20s ease-out; }
 
 /* Seventh Character (U) */
-header h1 span:nth-child(7) {
+#header h1 span:nth-child(7) {
   background: url(../graphics/sprite-logotype.png) -582px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
@@ -168,7 +197,7 @@ header h1 span:nth-child(7) {
   animation: letter7 20s ease-out; }
 
 /* Eighth Character (R) */
-header h1 span:nth-child(8) {
+#header h1 span:nth-child(8) {
   background: url(../graphics/sprite-logotype.png) -506px 0px no-repeat;
   margin: 0 0 0 4px;
   width: 75px;
@@ -179,7 +208,7 @@ header h1 span:nth-child(8) {
   animation: letter8 20s ease-out; }
 
 /* Ninth Character (W) */
-header h1 span:nth-child(9) {
+#header h1 span:nth-child(9) {
   background: url(../graphics/sprite-logotype.png) -662px 0px no-repeat;
   margin: 0;
   width: 110px;
@@ -190,7 +219,7 @@ header h1 span:nth-child(9) {
   animation: letter9 20s ease-out; }
 
 /* Tenth Character (E) */
-header h1 span:nth-child(10) {
+#header h1 span:nth-child(10) {
   background: url(../graphics/sprite-logotype.png) -216px 0px no-repeat;
   margin: 0 7px;
   width: 64px;
@@ -201,7 +230,7 @@ header h1 span:nth-child(10) {
   animation: letter10 20s ease-out; }
 
 /* Eleventh Character (N) */
-header h1 span:nth-child(11) {
+#header h1 span:nth-child(11) {
   background: url(../graphics/sprite-logotype.png) -426px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
@@ -523,116 +552,122 @@ header h1 span:nth-child(11) {
   100% {
     -webkit-transform: translateX(46px); } }
 
-/* Navigation */
-nav {
-  z-index: 3; }
-  nav #symbol {
-    background: url(../graphics/sprite-logotype.png) 0px 0px no-repeat;
-    background-size: 772px 150px;
-    color: transparent;
-    display: inline-block;
-    font-size: 0;
-    height: 150px;
-    left: 40px;
-    padding-bottom: 6px;
-    position: absolute;
-    top: 40px;
-    width: 75px; }
-  nav ul {
-    position: absolute;
-    right: 40px;
-    top: 157px; }
-    nav ul li {
-      display: inline-block;
-      margin-left: 15px;
-      text-transform: uppercase; }
-      nav ul li a {
-        color: #fff; }
-        nav ul li a i {
-          text-transform: lowercase; }
-
-/* Transition animations. */
-nav {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 3.75s;
-  -moz-transition-duration: 3.75s;
-  -o-transition-duration: 3.75s;
-  transition-duration: 3.75s;
-  -webkit-transition-delay: 1s;
-  -moz-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s; }
-
-/* Once the page is ready. */
-body.ready nav {
-  opacity: 1; }
-
-/* Cover page specific styles */
-#cover {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; }
-  #cover img {
-    position: absolute;
-    top: 0;
-    left: 0; }
-
-/* Transition animations. */
-#cover img {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 3.75s;
-  -moz-transition-duration: 3.75s;
-  -o-transition-duration: 3.75s;
-  transition-duration: 3.75s;
-  -webkit-transition-delay: 1s;
-  -moz-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s; }
-
-#cover img:nth-child(2) {
-  -webkit-transition-delay: 10s;
-  -moz-transition-delay: 10s;
-  -o-transition-delay: 10s;
-  transition-delay: 10s; }
-
-#cover img:nth-child(3) {
-  -webkit-transition-delay: 20s;
-  -moz-transition-delay: 20s;
-  -o-transition-delay: 20s;
-  transition-delay: 20s; }
-
-/* Once the page is ready. */
-body.ready #cover img {
-  opacity: 1; }
-
 /* Average screen size */
 @media only screen and (max-width: 1100px) {
-  header {
+  #header {
     zoom: 65%; } }
 /* Small-sized screens */
 @media only screen and (max-width: 800px) {
-  header {
+  #header {
     zoom: 45%; }
 
-  nav ul {
+  #nav ul {
     top: 70px; }
-    nav ul li {
+    #nav ul li {
       margin-bottom: 5px;
       display: block;
       text-align: right; } }
 /* Phone-sized screens */
 @media only screen and (max-width: 500px) {
-  header {
+  #header {
     display: none; } }
+html, body,
+h1, h2, h3, h4, h5, h6, p,
+.section, ul {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  overflow: hidden;
+  background-color: #000; }
+
+a.inactive {
+  pointer-events: none;
+  opacity: .5; }
+
+@font-face {
+  font-family: 'Filosita';
+  font-weight: normal;
+  font-style: italic;
+  font-variant: normal;
+  src: local("Filosita"), url(/typefaces/filosita-071211002EmigreWebOnly.eot) format("embedded-opentype"), url(/typefaces/filosita-071211002EmigreWebOnly.eot?#iefix) format("embedded-opentype"), url(/typefaces/filosita-071211002EmigreWebOnly.woff) format("woff"); }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+  html body {
+    font-family: 'Filosita', serif;
+    text-transform: none;
+    letter-spacing: 0;
+    font-style: italic; }
+    html body i, html body b, html body strong, html body em {
+      font-style: italic;
+      font-weight: normal; }
+    html body a,
+    html body a:link,
+    html body a:visited,
+    html body a:hover,
+    html body a:active,
+    html body a:focus {
+      color: #000;
+      text-decoration: none;
+      -webkit-transition-property: border-bottom-color;
+      -moz-transition-property: border-bottom-color;
+      -o-transition-property: border-bottom-color;
+      transition-property: border-bottom-color;
+      -webkit-transition-duration: 0.15s;
+      -moz-transition-duration: 0.15s;
+      -o-transition-duration: 0.15s;
+      transition-duration: 0.15s;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: transparent; }
+    html body a:hover,
+    html body a:active,
+    html body a:focus {
+      cursor: pointer;
+      border-bottom-color: #000; }
+    html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body #nav {
+      font-family: "brandon-grotesque";
+      font-style: normal;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    html body #nav i {
+      font-family: 'Filosita', serif;
+      text-transform: none;
+      letter-spacing: 0;
+      font-style: italic;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-font-smoothing: subpixel-antialiased;
+      -o-font-smoothing: subpixel-antialiased;
+      font-smoothing: subpixel-antialiased; }
+
+.section {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  float: left;
+  position: relative; }
+  .section h1 {
+    color: white;
+    text-align: center;
+    top: 40%;
+    position: absolute;
+    width: 100%;
+    z-index: 2; }
+  .section img.full {
+    width: 100%;
+    height: auto; }
+
+/* Cover page specific styles */
+#heritage {
+  background-color: blue; }
+
+#news {
+  background-color: yellow; }
+
+#stores {
+  background-color: aqua; }

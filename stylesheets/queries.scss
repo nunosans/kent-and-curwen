@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 1100px) {
 
-  header {
+  #header {
     zoom: 65%;
   }
 
@@ -12,10 +12,10 @@
 
 @media only screen and (max-width: 800px) {
 
-  header {
+  #header {
     zoom: 45%;
   }
-  nav {
+  #nav {
     ul {
       top: 70px;
       li {
@@ -32,7 +32,7 @@
 
 @media only screen and (max-width: 500px) {
 
-  header {
+  #header {
     display: none;
   }
 
