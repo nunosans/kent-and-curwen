@@ -1,0 +1,54 @@
+/* Cover page specific styles */
+
+#cover {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Transition animations. */
+
+#cover img {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+     -moz-transition-property: opacity;
+       -o-transition-property: opacity;
+          transition-property: opacity;
+  -webkit-transition-duration: 3.75s;
+     -moz-transition-duration: 3.75s;
+       -o-transition-duration: 3.75s;
+          transition-duration: 3.75s;
+  -webkit-transition-delay: 1s;
+     -moz-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
+}
+#cover img:nth-child(2) {
+  -webkit-transition-delay: 10s;
+     -moz-transition-delay: 10s;
+       -o-transition-delay: 10s;
+          transition-delay: 10s;
+}
+#cover img:nth-child(3) {
+  -webkit-transition-delay: 20s;
+     -moz-transition-delay: 20s;
+       -o-transition-delay: 20s;
+          transition-delay: 20s;
+}
+
+/* Once the page is ready. */
+
+body.ready {
+  #cover img {
+    opacity: 1;
+  }
+}
