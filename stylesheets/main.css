@@ -599,25 +599,14 @@ html {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased; }
   html body {
+    overflow: hidden;
     font-family: 'Filosita', serif;
     text-transform: none;
     letter-spacing: 0;
     font-style: italic;
     position: absolute;
     left: 0;
-    top: 0;
-    -webkit-transition-property: left;
-    -moz-transition-property: left;
-    -o-transition-property: left;
-    transition-property: left;
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease-in-out;
-    -moz-transition-timing-function: ease-in-out;
-    -o-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out; }
+    top: 0; }
     html body i, html body b, html body strong, html body em {
       font-style: italic;
       font-weight: normal; }
@@ -651,6 +640,7 @@ html {
       text-transform: uppercase;
       letter-spacing: 3px; }
     html body #nav i {
+      pointer-events: none;
       font-family: 'Filosita', serif;
       text-transform: none;
       letter-spacing: 0;
@@ -664,7 +654,7 @@ html {
   display: block;
   width: 100%;
   height: auto;
-  overflow: scroll;
+  overflow-x: hidden;
   float: left;
   position: relative; }
   .section h1 {

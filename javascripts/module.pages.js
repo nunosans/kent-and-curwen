@@ -14,14 +14,32 @@ function pages(element) {
   var navigation = $('#nav');
   var navigationItems = navigation.find('a');
   var windowWidth = $(window).width();
+  var windowHeight = $(window).height();
 
   function slide() {
+
+    // event.preventDefault();
+
     var index = $('a').index(this);
-    body.css('left', ('-' + (windowWidth * index) + 'px'));
+    console.log('Moving to section ' + index);
+
+    body.animate({
+      'left': ('-' + (windowWidth * index) + 'px')
+    },
+    440,
+    'swing'
+    );
+
+    window.location.hash = $(this).attr('rel');
+
+
   };
 
   function resize() {
+    windowWidth = $(window).width();
+    windowHeight = $(window).height();
     sections.width(windowWidth);
+    sections.height(windowHeight)
     body.width(windowWidth * sections.length);
   };
 
