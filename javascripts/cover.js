@@ -16,7 +16,6 @@ function cover(element) {
   function resize() {
 
     // Define variables.
-
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
     var windowRatio = windowHeight / windowWidth;

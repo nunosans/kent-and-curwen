@@ -5,7 +5,7 @@
  * @author nuno@savantstudio.co.uk (Nuno Coelho Santos).
  */
 
- function cover(element) {
+function cover(element) {
 
   el = $(element);
 
@@ -16,7 +16,6 @@
   function resize() {
 
     // Define variables.
-
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
     var windowRatio = windowHeight / windowWidth;
@@ -52,9 +51,11 @@
     }
 
   };
+
+  // Call functions.
   resize();
 
-  // Trigger resize also on window resize.
+  // Call functions on window resize.
   $(window).resize(function() {
     resize();
   });

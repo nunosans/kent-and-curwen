@@ -13,18 +13,16 @@ function panels(element) {
   var html = $('html');
   var body = $('body');
 
-  resize();
-
   function resize() {
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
 
-    sections.height(windowHeight);
     sections.width(windowWidth);
 
     html.width(windowWidth);
     body.width(windowWidth * sections.length);
-  }
+  };
+  resize();
 
   // Trigger resize also on window resize.
   $(window).resize(function() {

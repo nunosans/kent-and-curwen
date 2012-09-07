@@ -11,13 +11,7 @@ $(document).ready(function() {
   $('body').addClass('ready');
 
   // Call modules.
-  cover('div.cover');
-  panels('div.section');
-
-  // Apply auto-scroller to the nav.
-  // $('#nav').localScroll({
-  //   lock: true,
-  //   target: 'html'
-  // });
+  cover('.cover');
+  pages('.section');
 
 });
