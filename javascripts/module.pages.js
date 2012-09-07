@@ -12,7 +12,7 @@ function pages(element) {
   var body = $('body');
   var sections = $('.section');
   var navigation = $('#nav');
-  var navigationItems = navigation.find('a');
+  var navigationItems = navigation.find('span');
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
 
@@ -20,8 +20,7 @@ function pages(element) {
 
     // event.preventDefault();
 
-    var index = $('a').index(this);
-    console.log('Moving to section ' + index);
+    var index = $('span').index(this);
 
     body.animate({
       'left': ('-' + (windowWidth * index) + 'px')
@@ -30,8 +29,6 @@ function pages(element) {
     'swing'
     );
 
-    window.location.hash = $(this).attr('rel');
-
 
   };
 
@@ -39,7 +36,7 @@ function pages(element) {
     windowWidth = $(window).width();
     windowHeight = $(window).height();
     sections.width(windowWidth);
-    sections.height(windowHeight)
+    sections.height(windowHeight);
     body.width(windowWidth * sections.length);
   };
 
