@@ -5,8 +5,9 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 200px;
   z-index: 3;
+  pointer-events: none;
   #symbol {
     background: url(../graphics/sprite-logotype.png) 0px 0px no-repeat;
     background-size: 772px 150px;
@@ -19,6 +20,7 @@
     position: absolute;
     top: 40px;
     width: 75px;
+    pointer-events: auto;
   }
   span {
     color: #fff;
@@ -39,6 +41,7 @@
     border-bottom-color: #fff;
   }
   ul {
+    pointer-events: auto;
     position: absolute;
     right: 40px;
     top: 157px;

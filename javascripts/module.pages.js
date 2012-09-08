@@ -18,8 +18,6 @@ function pages(element) {
 
   function slide() {
 
-    // event.preventDefault();
-
     var index = $('span').index(this);
 
     body.animate({
