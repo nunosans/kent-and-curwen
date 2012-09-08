@@ -1,7 +1,7 @@
 // Copyright 2012 Savant. All Rights Reserved.
 
 /**
- * @fileoverview Kent & Curwen cover image scripts.
+ * @fileoverview Script to generate a cover image.
  * @author nuno@savantstudio.co.uk (Nuno Coelho Santos).
  */
 
@@ -10,19 +10,38 @@ function cover(element) {
   el = $(element);
 
   // Define this object's elements.
-  var image = el.find('img');
+  var body = $('body');
   var container = el;
+  var image = el.find('img');
+
+  // Define variables.
+  var imageWidth = image.width();
+  var imageHeight = image.height();
+  var imageRatio = imageHeight / imageWidth;
+
+  // Required styles.
+  body.css({
+    'margin': 0,
+    'overflow': 'hidden'
+  });
+  container.css({
+    'left': 0,
+    'overflow': 'hidden',
+    'position': 'absolute',
+    'top': 0
+  });
+  image.css({
+    'left': 0,
+    'position': 'absolute',
+    'top': 0
+  });
 
   function resize() {
 
-    // Define variables.
+    // Redefine variables.
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
     var windowRatio = windowHeight / windowWidth;
-
-    var imageWidth = image.width();
-    var imageHeight = image.height();
-    var imageRatio = imageHeight / imageWidth;
 
     if (windowRatio > imageRatio) {
 
@@ -51,11 +70,9 @@ function cover(element) {
     }
 
   };
-
-  // Call functions.
   resize();
 
-  // Call functions on window resize.
+  // Trigger resize also on window resize.
   $(window).resize(function() {
     resize();
   });

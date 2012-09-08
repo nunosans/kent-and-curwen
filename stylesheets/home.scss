@@ -1,7 +1,7 @@
 /* Transition animations. */
 
 #home .cover img {
-  opacity: 0;
+  // opacity: 0;
   -webkit-transition-property: opacity;
      -moz-transition-property: opacity;
        -o-transition-property: opacity;
@@ -32,6 +32,6 @@
 
 body.ready {
   #home .cover img {
-    opacity: 1;
+    // opacity: 1;
   }
 }

@@ -23,8 +23,7 @@ function pages(element) {
     body.animate({
       'left': ('-' + (windowWidth * index) + 'px')
     },
-    440,
-    'swing'
+    440
     );
 
 
