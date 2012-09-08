@@ -1292,7 +1292,8 @@ html body {
   overflow: scroll;
   float: left;
   position: relative;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch; }
   .section h1 {
     color: white;
     text-align: center;
