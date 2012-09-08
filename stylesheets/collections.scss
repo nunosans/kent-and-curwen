@@ -1,0 +1,23 @@
+
+#collections h2,
+#collections p,
+#collections img, {
+  height: auto;
+  position: relative;
+  display: block;
+}
+// Images width based on class.
+.w25 {width: 25%;}
+.w28 {width: 28%;}
+.w31 {width: 31%;}
+.w36 {width: 36%;}
+.w49 {width: 49%;}
+
+// Images position based on class.
+.l11 {left: 11%;}
+.l31 {left: 31%;}
+.l36 {left: 36%;}
+.l57 {left: 57%;}
+.l66 {left: 66%;}
+
+.full{width: 100%; left: 0;}

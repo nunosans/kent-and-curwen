@@ -53,10 +53,21 @@
          -o-font-smoothing: antialiased;
             font-smoothing: antialiased;
     li {
+
       display: inline-block;
+      font-family: "brandon-grotesque";
+      font-style: normal;
+      letter-spacing: 3px;
       margin-left: 15px;
       text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+         -moz-font-smoothing: antialiased;
+           -o-font-smoothing: antialiased;
+              font-smoothing: antialiased;
       span i {
+        letter-spacing: 1px;
+        font-family: 'Filosita', serif;
+        font-style: italic;
         text-transform: lowercase;
       }
     }

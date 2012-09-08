@@ -52,9 +52,19 @@
     font-smoothing: antialiased; }
     #nav ul li {
       display: inline-block;
+      font-family: "brandon-grotesque";
+      font-style: normal;
+      letter-spacing: 3px;
       margin-left: 15px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -o-font-smoothing: antialiased;
+      font-smoothing: antialiased; }
       #nav ul li span i {
+        letter-spacing: 1px;
+        font-family: 'Filosita', serif;
+        font-style: italic;
         text-transform: lowercase; }
 
 /* Transition animations. */
@@ -1132,6 +1142,52 @@ body.ready #nav {
   100% {-webkit-transform: translateX(46px);}
 }
 */
+#collections h2,
+#collections p,
+#collections img {
+  height: auto;
+  position: relative;
+  display: block; }
+
+.w25 {
+  width: 25%; }
+
+.w28 {
+  width: 28%; }
+
+.w31 {
+  width: 31%; }
+
+.w36 {
+  width: 36%; }
+
+.w49 {
+  width: 49%; }
+
+.l11 {
+  left: 11%; }
+
+.l31 {
+  left: 31%; }
+
+.l36 {
+  left: 36%; }
+
+.l57 {
+  left: 57%; }
+
+.l66 {
+  left: 66%; }
+
+.full {
+  width: 100%;
+  left: 0; }
+
+#heritage .full {
+  width: 90%;
+  padding: 0 5% 5%;
+  background-color: #CBC7BC; }
+
 /* Average screen size */
 @media only screen and (max-width: 1100px) {
   #header {
@@ -1175,27 +1231,31 @@ html body {
   overflow: hidden;
   font-family: 'Filosita', serif;
   text-transform: none;
-  letter-spacing: 0;
+  letter-spacing: 1px;
   font-style: italic;
   position: absolute;
   left: 0;
   top: 0;
-  letter-spacing: 1px;
   font-size: 17px;
   line-height: 21px; }
   html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
+    font-family: "brandon-grotesque";
+    font-style: normal;
+    text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     font-smoothing: antialiased; }
   html body h1 {
-    font-size: 44px;
-    line-height: 66px; }
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 8px; }
   html body h2 {
     font-size: 34px;
-    line-height: 51px; }
+    line-height: 51px;
+    letter-spacing: 5px; }
   html body p {
-    width: 560px;
+    width: 440px;
     margin: 20px 0; }
   html body i, html body b, html body strong, html body em {
     font-style: italic;
@@ -1224,21 +1284,6 @@ html body {
   html body a:focus {
     cursor: pointer;
     border-bottom-color: #000; }
-  html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body #nav {
-    font-family: "brandon-grotesque";
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 3px; }
-  html body #nav i {
-    pointer-events: none;
-    font-family: 'Filosita', serif;
-    text-transform: none;
-    letter-spacing: 0;
-    font-style: italic;
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-font-smoothing: subpixel-antialiased;
-    -o-font-smoothing: subpixel-antialiased;
-    font-smoothing: subpixel-antialiased; }
 
 .section {
   display: block;
