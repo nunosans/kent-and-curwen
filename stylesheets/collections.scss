@@ -1,11 +1,18 @@
-
-#collections h2,
-#collections p,
-#collections img, {
-  height: auto;
-  position: relative;
-  display: block;
+#collections {
+  margin-bottom: 600px;
 }
+
+#collections * {
+  height: auto;
+  display: inline-block;
+  position: absolute;
+}
+
+#collections img {
+  box-shadow: 0 1px 10px -2px rgba(0,0,0,.1),
+              0 0 0 1px rgba(0,0,0,.03);
+}
+
 // Images width based on class.
 .w25 {width: 25%;}
 .w28 {width: 28%;}
@@ -14,10 +21,28 @@
 .w49 {width: 49%;}
 
 // Images position based on class.
-.l11 {left: 11%;}
-.l31 {left: 31%;}
-.l36 {left: 36%;}
-.l57 {left: 57%;}
-.l66 {left: 66%;}
+.l11 {left: 11% !important;}
+.l31 {left: 31% !important;}
+.l36 {left: 36% !important;}
+.l50 {left: 50% !important;}
+.l57 {left: 57% !important;}
+.l66 {left: 66% !important;}
 
-.full{width: 100%; left: 0;}
+.full {width: 100%; left: 0%;}
+
+#collections > *:nth-child(1)  {top:  300px;}
+#collections > *:nth-child(2)  {top:    0px;}
+
+#collections > *:nth-child(3)  {top: 1000px;}
+#collections > *:nth-child(4)  {top: 1030px;}
+#collections > *:nth-child(5)  {top: 1200px;}
+#collections > *:nth-child(6)  {top: 1700px;}
+
+#collections > *:nth-child(7)  {top: 2300px;}
+#collections > *:nth-child(8)  {top: 2900px;}
+
+#collections > *:nth-child(9)  {top: 3000px;}
+
+#collections > *:nth-child(10) {top: 5800px;}
+#collections > *:nth-child(11) {top: 4200px;}
+#collections > *:nth-child(12) {top: 5200px;}

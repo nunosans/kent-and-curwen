@@ -13,5 +13,8 @@ $(document).ready(function() {
   // Call modules.
   cover('.cover');
   pages('.section');
+  $('.section').stellar({
+    hideDistantElements: false
+  });
 
 });
