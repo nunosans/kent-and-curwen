@@ -14,21 +14,24 @@
 }
 
 // Images width based on class.
-.w25 {width: 25%;}
-.w28 {width: 28%;}
-.w31 {width: 31%;}
-.w36 {width: 36%;}
-.w49 {width: 49%;}
+.w25  {width:  25%;} //  720px on 15" Retina.
+.w28  {width:  28%;} //  807px on 15" Retina.
+.w31  {width:  31%;} //  893px on 15" Retina.
+.w36  {width:  36%;} // 1037px on 15" Retina.
+.w40  {width:  40%;} // 1152px on 15" Retina.
+.w49  {width:  49%;} // 1412px on 15" Retina.
+.full {width: 100%;} // 2880px on 15" Retina.
 
 // Images position based on class.
-.l11 {left: 11% !important;}
-.l31 {left: 31% !important;}
-.l36 {left: 36% !important;}
-.l50 {left: 50% !important;}
-.l57 {left: 57% !important;}
-.l66 {left: 66% !important;}
+.full {left:  0% !important;}
+.l11  {left: 11% !important;}
+.l31  {left: 31% !important;}
+.l36  {left: 36% !important;}
+.l50  {left: 50% !important;}
+.l57  {left: 57% !important;}
+.l66  {left: 66% !important;}
 
-.full {width: 100%; left: 0%;}
+
 
 #collections > *:nth-child(1)  {top:  300px;}
 #collections > *:nth-child(2)  {top:    0px;}
@@ -43,6 +46,6 @@
 
 #collections > *:nth-child(9)  {top: 3000px;}
 
-#collections > *:nth-child(10) {top: 5800px;}
-#collections > *:nth-child(11) {top: 4200px;}
-#collections > *:nth-child(12) {top: 5200px;}
+#collections > *:nth-child(10) {top: 4800px;}
+#collections > *:nth-child(11) {top: 5800px;}
+#collections > *:nth-child(12) {top: 6500px;}

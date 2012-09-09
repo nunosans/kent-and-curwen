@@ -52,7 +52,7 @@
     font-smoothing: antialiased; }
     #nav ul li {
       display: inline-block;
-      font-family: "brandon-grotesque";
+      font-family: "brandon-grotesque", Helvetica, sans-serif;
       font-style: normal;
       letter-spacing: 3px;
       margin-left: 15px;
@@ -1165,8 +1165,17 @@ body.ready #nav {
 .w36 {
   width: 36%; }
 
+.w40 {
+  width: 40%; }
+
 .w49 {
   width: 49%; }
+
+.full {
+  width: 100%; }
+
+.full {
+  left: 0% !important; }
 
 .l11 {
   left: 11% !important; }
@@ -1185,10 +1194,6 @@ body.ready #nav {
 
 .l66 {
   left: 66% !important; }
-
-.full {
-  width: 100%;
-  left: 0%; }
 
 #collections > *:nth-child(1) {
   top: 300px; }
@@ -1218,13 +1223,13 @@ body.ready #nav {
   top: 3000px; }
 
 #collections > *:nth-child(10) {
-  top: 5800px; }
+  top: 4800px; }
 
 #collections > *:nth-child(11) {
-  top: 4200px; }
+  top: 5800px; }
 
 #collections > *:nth-child(12) {
-  top: 5200px; }
+  top: 6500px; }
 
 #heritage .full {
   width: 90%;
@@ -1282,7 +1287,7 @@ html body {
   font-size: 17px;
   line-height: 21px; }
   html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
-    font-family: "brandon-grotesque";
+    font-family: "brandon-grotesque", Helvetica, sans-serif;
     font-style: normal;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
