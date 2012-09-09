@@ -1153,6 +1153,9 @@ body.ready #nav {
 #collections img {
   box-shadow: 0 1px 10px -2px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.03); }
 
+.w21 {
+  width: 21%; }
+
 .w25 {
   width: 25%; }
 
@@ -1162,11 +1165,17 @@ body.ready #nav {
 .w31 {
   width: 31%; }
 
+.w34 {
+  width: 34%; }
+
 .w36 {
   width: 36%; }
 
 .w40 {
   width: 40%; }
+
+.w42 {
+  width: 42%; }
 
 .w49 {
   width: 49%; }
@@ -1180,6 +1189,12 @@ body.ready #nav {
 .l11 {
   left: 11% !important; }
 
+.l26 {
+  left: 26% !important; }
+
+.l28 {
+  left: 28% !important; }
+
 .l31 {
   left: 31% !important; }
 
@@ -1189,11 +1204,20 @@ body.ready #nav {
 .l50 {
   left: 50% !important; }
 
+.l54 {
+  left: 54% !important; }
+
 .l57 {
   left: 57% !important; }
 
+.l61 {
+  left: 61% !important; }
+
 .l66 {
   left: 66% !important; }
+
+.l74 {
+  left: 74% !important; }
 
 #collections > *:nth-child(1) {
   top: 300px; }
@@ -1297,11 +1321,13 @@ html body {
   html body h1 {
     font-size: 48px;
     line-height: 72px;
-    letter-spacing: 8px; }
+    letter-spacing: 8px;
+    word-spacing: 16px; }
   html body h2 {
     font-size: 34px;
     line-height: 51px;
-    letter-spacing: 5px; }
+    letter-spacing: 5px;
+    word-spacing: 12px; }
   html body p {
     width: 440px;
     margin: 20px 0; }

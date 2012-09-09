@@ -5,6 +5,8 @@
  * @author nuno@savantstudio.co.uk (Nuno Coelho Santos).
  */
 
+resolute();
+
 $(document).ready(function() {
 
   // Add class ready to the body.
