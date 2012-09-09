@@ -9,8 +9,10 @@ resolute();
 
 $(document).ready(function() {
 
-  // Add class ready to the body.
-  $('body').addClass('ready');
+  $(window).load(function() {
+    // Add class ready to the body.
+    $('body').addClass('ready');
+  });
 
   // Call modules.
   cover('.cover');

@@ -1,7 +1,11 @@
 /* Transition animations. */
 
+#home {
+  background-color: #000;
+}
+
 #home .cover img {
-  // opacity: 0;
+  opacity: 0;
   -webkit-transition-property: opacity;
      -moz-transition-property: opacity;
        -o-transition-property: opacity;
@@ -10,10 +14,10 @@
      -moz-transition-duration: 3.75s;
        -o-transition-duration: 3.75s;
           transition-duration: 3.75s;
-  -webkit-transition-delay: 1s;
-     -moz-transition-delay: 1s;
-       -o-transition-delay: 1s;
-          transition-delay: 1s;
+  -webkit-transition-delay: 3s;
+     -moz-transition-delay: 3s;
+       -o-transition-delay: 3s;
+          transition-delay: 3s;
 }
 #home .cover img:nth-child(2) {
   -webkit-transition-delay: 10s;
@@ -22,16 +26,16 @@
           transition-delay: 10s;
 }
 #home .cover img:nth-child(3) {
-  -webkit-transition-delay: 20s;
-     -moz-transition-delay: 20s;
-       -o-transition-delay: 20s;
-          transition-delay: 20s;
+  -webkit-transition-delay: 17s;
+     -moz-transition-delay: 17s;
+       -o-transition-delay: 17s;
+          transition-delay: 17s;
 }
 
 /* Once the page is ready. */
 
 body.ready {
   #home .cover img {
-    // opacity: 1;
+    opacity: 1;
   }
 }

@@ -1,12 +1,14 @@
 // Copyright 2012 Savant. All Rights Reserved.
 
 /**
- * @fileoverview Script to define the suitable imagery resolution.
+ * @fileoverview Script to determine if the device has a high or low
+ * resolution screen, its size, and serve the right asset.
  * @author nuno@savantstudio.co.uk (Nuno Coelho Santos).
  */
 
 function resolute() {
 
+  // Declare variables.
   var $images = $('img');
   var width = $(window).width();
   var res;
@@ -33,11 +35,10 @@ function resolute() {
     size = 'small';
   }
 
-
+  // Rewrite each image's source attribute.
   $images.each(function() {
       var src = $(this).attr('src').substring(22);
       $(this).attr('src', ('/images/' + size + '/' + res + '/' + src));
-      return;
   });
 
   // small/lo-res/  (maximum image width:  720px)
@@ -48,5 +49,3 @@ function resolute() {
   // large/hi-res/  (maximum image width: 5760px)
 
 }
-
-
