@@ -18,6 +18,8 @@ $(document).ready(function() {
   cover('.cover');
   pages('.section');
   $('.section').stellar({
+    // scrollProperty: 'transform',
+    // positionProperty: 'transform',
     hideDistantElements: false
   });
 

@@ -34,8 +34,7 @@ h1, h2, h3, h4, h5, h6, p,
 html, body {
   background-color: #000;
 }
-
-a.inactive {
+.inactive {
   pointer-events: none;
   opacity: .5;
 }
