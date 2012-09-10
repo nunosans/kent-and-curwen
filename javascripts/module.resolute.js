@@ -26,18 +26,18 @@ function resolute() {
   // Determine if it is a large, medium or small screen.
   if (width > 1500) {
     console.log('Detected a large-sized screen.');
-    size = 'large';
+    size = 'L';
   } else if (width > 720) {
     console.log('Detected a medium-sized screen.');
-    size = 'medium';
+    size = 'M';
   } else {
     console.log('Detected a small-sized screen.');
-    size = 'small';
+    size = 'S';
   }
 
   // Rewrite each image's source attribute.
   $images.each(function() {
-      var src = $(this).attr('src').substring(22);
+      var src = $(this).attr('src').substring(17);
       $(this).attr('src', ('/images/' + size + '/' + res + '/' + src));
   });
 

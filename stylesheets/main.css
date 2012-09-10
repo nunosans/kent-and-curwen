@@ -101,22 +101,22 @@ body.ready #nav {
   -moz-transition-duration: 3.75s;
   -o-transition-duration: 3.75s;
   transition-duration: 3.75s;
-  -webkit-transition-delay: 3s;
-  -moz-transition-delay: 3s;
-  -o-transition-delay: 3s;
-  transition-delay: 3s; }
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s; }
 
 #home .cover img:nth-child(2) {
-  -webkit-transition-delay: 10s;
-  -moz-transition-delay: 10s;
-  -o-transition-delay: 10s;
-  transition-delay: 10s; }
+  -webkit-transition-delay: 12s;
+  -moz-transition-delay: 12s;
+  -o-transition-delay: 12s;
+  transition-delay: 12s; }
 
 #home .cover img:nth-child(3) {
-  -webkit-transition-delay: 17s;
-  -moz-transition-delay: 17s;
-  -o-transition-delay: 17s;
-  transition-delay: 17s; }
+  -webkit-transition-delay: 22s;
+  -moz-transition-delay: 22s;
+  -o-transition-delay: 22s;
+  transition-delay: 22s; }
 
 /* Once the page is ready. */
 body.ready #home .cover img {
