@@ -77,11 +77,7 @@
   -webkit-transition-duration: 3.75s;
   -moz-transition-duration: 3.75s;
   -o-transition-duration: 3.75s;
-  transition-duration: 3.75s;
-  -webkit-transition-delay: 1s;
-  -moz-transition-delay: 1s;
-  -o-transition-delay: 1s;
-  transition-delay: 1s; }
+  transition-duration: 3.75s; }
 
 /* Once the page is ready. */
 body.ready #nav {
@@ -106,20 +102,7 @@ body.ready #nav {
   -o-transition-delay: 1s;
   transition-delay: 1s; }
 
-#home .cover img:nth-child(2) {
-  -webkit-transition-delay: 13s;
-  -moz-transition-delay: 13s;
-  -o-transition-delay: 13s;
-  transition-delay: 13s; }
-
-#home .cover img:nth-child(3) {
-  -webkit-transition-delay: 25s;
-  -moz-transition-delay: 25s;
-  -o-transition-delay: 25s;
-  transition-delay: 25s; }
-
-/* Once the page is ready. */
-body.ready #home .cover img {
+#home .cover img.active {
   opacity: 1; }
 
 /* Page header with the brand name on the home page */

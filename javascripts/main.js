@@ -9,18 +9,19 @@ resolute();
 
 $(document).ready(function() {
 
-  $(window).load(function() {
-    // Add class ready to the body.
-    $('body').addClass('ready');
-  });
-
   // Call modules.
   cover('.cover');
   pages('.section');
+
   $('.section').stellar({
     // scrollProperty: 'transform',
     // positionProperty: 'transform',
     hideDistantElements: false
+  });
+
+  $(window).load(function() {
+    // Add class ready to the body.
+    $('body').addClass('ready');
   });
 
 });

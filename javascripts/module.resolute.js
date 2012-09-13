@@ -16,22 +16,22 @@ function resolute() {
 
   // Determine if it is a high or low resolution screen.
   if (window.devicePixelRatio === 1) {
-    console.log('Detected a low resolution screen.');
+    // console.log('Detected a low resolution screen.');
     res = 'lo-res';
   } else {
-    console.log('Detected a high resolution screen.');
+    // console.log('Detected a high resolution screen.');
     res = 'hi-res';
   }
 
   // Determine if it is a large, medium or small screen.
   if (width > 1500) {
-    console.log('Detected a large-sized screen.');
+    // console.log('Detected a large-sized screen.');
     size = 'L';
   } else if (width > 720) {
-    console.log('Detected a medium-sized screen.');
+    // console.log('Detected a medium-sized screen.');
     size = 'M';
   } else {
-    console.log('Detected a small-sized screen.');
+    // console.log('Detected a small-sized screen.');
     size = 'S';
   }
 
