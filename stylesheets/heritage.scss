@@ -1,7 +1,2 @@
-#heritage{
-  .full {
-    width: 90%;
-    padding: 0 5% 5%;
-    background-color: #CBC7BC;
-  }
-}
+#heritage > *:nth-child(1)  {}
+#heritage > *:nth-child(1) > *:nth-child(1) {top: 300px;}

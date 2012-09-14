@@ -85,6 +85,10 @@
      -moz-transition-duration: 3.75s;
        -o-transition-duration: 3.75s;
           transition-duration: 3.75s;
+  -webkit-transition-delay: 1s;
+     -moz-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 /* Once the page is ready. */

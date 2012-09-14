@@ -22,7 +22,6 @@
 @import "queries.scss";
 
 // Browser Reset
-
 html, body,
 h1, h2, h3, h4, h5, h6, p,
 .section, ul {
@@ -46,9 +45,9 @@ html, body {
   font-style: italic;
   font-variant: normal;
   src: local('Filosita'),
-  url(/typefaces/filosita-071211002EmigreWebOnly.eot) format('embedded-opentype'),
-  url(/typefaces/filosita-071211002EmigreWebOnly.eot?#iefix) format('embedded-opentype'),
-  url(/typefaces/filosita-071211002EmigreWebOnly.woff) format('woff')
+  url(/typefaces/filosita.eot) format('embedded-opentype'),
+  url(/typefaces/filosita.eot?#iefix) format('embedded-opentype'),
+  url(/typefaces/filosita.woff) format('woff')
 }
 
 html {
@@ -122,16 +121,29 @@ html {
 }
 
 .section {
+  background-color: #fff;
   display: block;
-  width: 100%;
+  float: left;
   height: auto;
   overflow-y: scroll;
   overflow-x: hidden;
-  float: left;
   position: relative;
-  background-color: #fff;
+  width: 100%;
   // Add native style momentum to scrolling.
   -webkit-overflow-scrolling: touch;
+  > * {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    > * {
+      height: auto;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
   h1 {
     color: white;
     text-align: center;
@@ -143,13 +155,35 @@ html {
   }
   img {
     padding: 0;
-  }
-  img.full {
-    width: 100%;
     height: auto;
-  }
-  img.cover {
-    width: 100%;
-    height: auto;
+    box-shadow: 0 1px 10px -2px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.03);
   }
 }
+
+// Images with width based on class.
+.w21  {width:  21%;} //  605px on 15" Retina.
+.w25  {width:  25%;} //  720px on 15" Retina.
+.w28  {width:  28%;} //  807px on 15" Retina.
+.w31  {width:  31%;} //  893px on 15" Retina.
+.w34  {width:  34%;} //  980px on 15" Retina.
+.w36  {width:  36%;} // 1037px on 15" Retina.
+.w40  {width:  40%;} // 1152px on 15" Retina.
+.w42  {width:  42%;} // 1210px on 15" Retina.
+.w49  {width:  49%;} // 1412px on 15" Retina.
+.full {width: 100%;} // 2880px on 15" Retina.
+
+// Images with position based on class.
+.full {left:  0% !important;}
+.l11  {left: 11% !important;}
+.l24  {left: 24% !important;}
+.l26  {left: 26% !important;}
+.l28  {left: 28% !important;}
+.l31  {left: 31% !important;}
+.l36  {left: 36% !important;}
+.l47  {left: 47% !important;}
+.l50  {left: 50% !important;}
+.l54  {left: 54% !important;}
+.l57  {left: 57% !important;}
+.l61  {left: 61% !important;}
+.l66  {left: 66% !important;}
+.l74  {left: 74% !important;}
