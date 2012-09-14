@@ -6,7 +6,7 @@
   top: 50%;
   left: 50%;
   width: 1015px;
-  height: 80px;
+  height: 80px !important;
   margin: -40px 0 0 -507.5px;
   h1 {
     margin: 0;
@@ -19,7 +19,7 @@
   }
 }
 
-#header h1 span {
+#header h1 > * {
   font-size: 0;
   color: transparent;
   background-position: 0 0;
@@ -32,7 +32,7 @@
   background-size: 772px 150px !important;
 }
 /* First Character (K) */
-#header h1 span:nth-child(1) {
+#header h1 > *:nth-child(1) {
   background: url(../graphics/sprite-logotype.png) -350px 0px no-repeat;
   // background-image: url(../graphics/char-k.png);
   // background-size: 75px 80px;
@@ -48,7 +48,7 @@
           animation: letter1 15s ease-out;
 }
 /* Second Character (E) */
-#header h1 span:nth-child(2) {
+#header h1 > *:nth-child(2) {
   background: url(../graphics/sprite-logotype.png) -216px 0px no-repeat;
   // background-image: url(../graphics/char-e.png);
   // background-size: 64px 80px;
@@ -64,7 +64,7 @@
           animation: letter2 15s ease-out;
 }
 /* Third Character (N) */
-#header h1 span:nth-child(3) {
+#header h1 > *:nth-child(3) {
   background: url(../graphics/sprite-logotype.png) -426px 0px no-repeat;
   // background-image: url(../graphics/char-n.png);
   // background-size: 79px 80px;
@@ -80,7 +80,7 @@
           animation: letter3 15s ease-out;
 }
 /* Fourth Character (T) */
-#header h1 span:nth-child(4) {
+#header h1 > *:nth-child(4) {
   background: url(../graphics/sprite-logotype.png) -281px 0px no-repeat;
   // background-image: url(../graphics/char-t.png);
   // background-size: 68px 80px;
@@ -96,7 +96,7 @@
           animation: letter4 15s ease-out;
 }
 /* Fifth Character (Ampersand) */
-#header h1 span:nth-child(5) {
+#header h1 > *:nth-child(5) {
   background: url(../graphics/sprite-logotype.png) -76px 0px no-repeat;
   // background-image: url(../graphics/char-amp.png);
   // background-size: 72px 80px;
@@ -112,7 +112,7 @@
           animation: letter5 15s ease-out;
 }
 /* Sixth Character (C) */
-#header h1 span:nth-child(6) {
+#header h1 > *:nth-child(6) {
   background: url(../graphics/sprite-logotype.png) -149px 0px no-repeat;
   // background-image: url(../graphics/char-c.png);
   // background-size: 66px 80px;
@@ -128,7 +128,7 @@
           animation: letter6 15s ease-out;
 }
 /* Seventh Character (U) */
-#header h1 span:nth-child(7) {
+#header h1 > *:nth-child(7) {
   background: url(../graphics/sprite-logotype.png) -582px 0px no-repeat;
   // background-image: url(../graphics/char-u.png);
   // background-size: 79px 80px;
@@ -144,7 +144,7 @@
           animation: letter7 15s ease-out;
 }
 /* Eighth Character (R) */
-#header h1 span:nth-child(8) {
+#header h1 > *:nth-child(8) {
   background: url(../graphics/sprite-logotype.png) -506px 0px no-repeat;
   // background-image: url(../graphics/char-r.png);
   // background-size: 75px 80px;
@@ -160,7 +160,7 @@
           animation: letter8 15s ease-out;
 }
 /* Ninth Character (W) */
-#header h1 span:nth-child(9) {
+#header h1 > *:nth-child(9) {
   background: url(../graphics/sprite-logotype.png) -662px 0px no-repeat;
   // background-image: url(../graphics/char-w.png);
   // background-size: 110px 80px;
@@ -176,7 +176,7 @@
           animation: letter9 15s ease-out;
 }
 /* Tenth Character (E) */
-#header h1 span:nth-child(10) {
+#header h1 > *:nth-child(10) {
   background: url(../graphics/sprite-logotype.png) -216px 0px no-repeat;
   // background-image: url(../graphics/char-e.png);
   // background-size: 64px 80px;
@@ -192,7 +192,7 @@
           animation: letter10 15s ease-out;
 }
 /* Eleventh Character (N) */
-#header h1 span:nth-child(11) {
+#header h1 > *:nth-child(11) {
   background: url(../graphics/sprite-logotype.png) -426px 0px no-repeat;
   // background-image: url(../graphics/char-n.png);
   // background-size: 79px 80px;

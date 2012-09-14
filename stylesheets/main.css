@@ -116,7 +116,7 @@ body.ready #nav {
   top: 50%;
   left: 50%;
   width: 1015px;
-  height: 80px;
+  height: 80px !important;
   margin: -40px 0 0 -507.5px; }
   #header h1 {
     margin: 0;
@@ -127,7 +127,7 @@ body.ready #nav {
     margin: 0;
     top: 0; }
 
-#header h1 span {
+#header h1 > * {
   font-size: 0;
   color: transparent;
   background-position: 0 0;
@@ -140,7 +140,7 @@ body.ready #nav {
   background-size: 772px 150px !important; }
 
 /* First Character (K) */
-#header h1 span:nth-child(1) {
+#header h1 > *:nth-child(1) {
   background: url(../graphics/sprite-logotype.png) -350px 0px no-repeat;
   margin: 0 0 0 7px;
   width: 75px;
@@ -154,7 +154,7 @@ body.ready #nav {
   animation: letter1 15s ease-out; }
 
 /* Second Character (E) */
-#header h1 span:nth-child(2) {
+#header h1 > *:nth-child(2) {
   background: url(../graphics/sprite-logotype.png) -216px 0px no-repeat;
   margin: 0 7px;
   width: 64px;
@@ -168,7 +168,7 @@ body.ready #nav {
   animation: letter2 15s ease-out; }
 
 /* Third Character (N) */
-#header h1 span:nth-child(3) {
+#header h1 > *:nth-child(3) {
   background: url(../graphics/sprite-logotype.png) -426px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
@@ -182,7 +182,7 @@ body.ready #nav {
   animation: letter3 15s ease-out; }
 
 /* Fourth Character (T) */
-#header h1 span:nth-child(4) {
+#header h1 > *:nth-child(4) {
   background: url(../graphics/sprite-logotype.png) -281px 0px no-repeat;
   margin: 0 4px;
   width: 68px;
@@ -196,7 +196,7 @@ body.ready #nav {
   animation: letter4 15s ease-out; }
 
 /* Fifth Character (Ampersand) */
-#header h1 span:nth-child(5) {
+#header h1 > *:nth-child(5) {
   background: url(../graphics/sprite-logotype.png) -76px 0px no-repeat;
   margin: 0 40px 0 44px;
   width: 72px;
@@ -210,7 +210,7 @@ body.ready #nav {
   animation: letter5 15s ease-out; }
 
 /* Sixth Character (C) */
-#header h1 span:nth-child(6) {
+#header h1 > *:nth-child(6) {
   background: url(../graphics/sprite-logotype.png) -149px 0px no-repeat;
   margin: 0 5px 0 6px;
   width: 66px;
@@ -224,7 +224,7 @@ body.ready #nav {
   animation: letter6 15s ease-out; }
 
 /* Seventh Character (U) */
-#header h1 span:nth-child(7) {
+#header h1 > *:nth-child(7) {
   background: url(../graphics/sprite-logotype.png) -582px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
@@ -238,7 +238,7 @@ body.ready #nav {
   animation: letter7 15s ease-out; }
 
 /* Eighth Character (R) */
-#header h1 span:nth-child(8) {
+#header h1 > *:nth-child(8) {
   background: url(../graphics/sprite-logotype.png) -506px 0px no-repeat;
   margin: 0 0 0 4px;
   width: 75px;
@@ -252,7 +252,7 @@ body.ready #nav {
   animation: letter8 15s ease-out; }
 
 /* Ninth Character (W) */
-#header h1 span:nth-child(9) {
+#header h1 > *:nth-child(9) {
   background: url(../graphics/sprite-logotype.png) -662px 0px no-repeat;
   margin: 0;
   width: 110px;
@@ -266,7 +266,7 @@ body.ready #nav {
   animation: letter9 15s ease-out; }
 
 /* Tenth Character (E) */
-#header h1 span:nth-child(10) {
+#header h1 > *:nth-child(10) {
   background: url(../graphics/sprite-logotype.png) -216px 0px no-repeat;
   margin: 0 7px;
   width: 64px;
@@ -280,7 +280,7 @@ body.ready #nav {
   animation: letter10 15s ease-out; }
 
 /* Eleventh Character (N) */
-#header h1 span:nth-child(11) {
+#header h1 > *:nth-child(11) {
   background: url(../graphics/sprite-logotype.png) -426px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
@@ -1147,7 +1147,7 @@ body.ready #nav {
 #collections > *:nth-child(5) > *:nth-child(1) {
   top: 30px; }
 #collections > *:nth-child(5) > *:nth-child(2) {
-  top: 230px; }
+  top: 130px; }
 #collections > *:nth-child(5) > *:nth-child(3) {
   top: 70px; }
 #collections > *:nth-child(6) > *:nth-child(1) {
@@ -1199,7 +1199,7 @@ body.ready #nav {
 #collections > *:nth-child(17) > *:nth-child(3) {
   top: 350px; }
 #collections > *:nth-child(17) > *:nth-child(4) {
-  top: 120px; }
+  top: 160px; }
 
 #heritage > *:nth-child(1) > *:nth-child(1) {
   top: 300px; }
@@ -1317,8 +1317,7 @@ html body {
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
-  width: 100%;
-  -webkit-overflow-scrolling: touch; }
+  width: 100%; }
   .section > * {
     display: block;
     width: 100%;

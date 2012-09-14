@@ -97,10 +97,9 @@ function cover(element) {
 
   };
 
-  $(document).ready(function() {
-    resize();
-    play();
-  });
+  // Call functions.
+  resize();
+  play();
 
   // Trigger resize also on window resize.
   $(window).resize(function() {

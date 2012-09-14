@@ -27,7 +27,6 @@ function pages(element) {
     440
     );
 
-
   };
 
   function resize() {
@@ -35,7 +34,7 @@ function pages(element) {
     windowHeight = $(window).height();
     sections.width(windowWidth);
     sections.height(windowHeight);
-    screens.height(windowHeight)
+    screens.height(windowHeight);
     body.width(windowWidth * sections.length);
   };
 

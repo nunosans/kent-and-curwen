@@ -14,7 +14,7 @@ $(document).ready(function() {
   pages('.section');
 
   $('.section').stellar({
-    scrollProperty: 'transform',
+    // scrollProperty: 'transform',
     // positionProperty: 'transform',
     hideDistantElements: false,
     verticalOffset: 0
