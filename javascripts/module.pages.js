@@ -34,7 +34,6 @@ function pages(element) {
     windowHeight = $(window).height();
     sections.width(windowWidth);
     sections.height(windowHeight);
-    screens.height(windowHeight);
     body.width(windowWidth * sections.length);
   };
 

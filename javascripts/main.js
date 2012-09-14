@@ -10,7 +10,7 @@ resolute();
 $(document).ready(function() {
 
   // Call modules.
-  cover('.cover');
+  cover('#home .cover');
   pages('.section');
 
   $('.section').stellar({

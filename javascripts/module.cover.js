@@ -59,7 +59,7 @@ function cover(element) {
 
       // Bleed on top and bottom.
       $images.width(windowWidth);
-      $images.height($images.width() * imagesRatio);
+      $images.height(windowWidth * imagesRatio);
 
       container.height(windowHeight);
       container.width('100%');

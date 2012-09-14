@@ -1,6 +1,7 @@
 #collections {
 
   > *:nth-child(1)  {
+    overflow: hidden;
     > *:nth-child(1) {top: 300px;}
     > *:nth-child(2) {}
   }
@@ -123,7 +124,9 @@
 
   > *:nth-child(39) {}
 
-  > *:nth-child(40) {}
+  > *:nth-child(40) {
+    height: 200%;
+  }
 
   > *:nth-child(41) {}
 
