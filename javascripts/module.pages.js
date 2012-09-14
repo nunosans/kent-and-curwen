@@ -16,16 +16,36 @@ function pages(element) {
   var navigationItems = navigation.find('span');
   var windowWidth = $(window).width();
   var windowHeight = $(window).height();
+  var location = 'http://kentandcurwen.dev/';
 
   function slide() {
 
+    // Declare variables.
+    var sectionName = $(this).attr('rel');
+    var section = $('#' + sectionName);
     var index = $('span').index(this);
 
-    body.animate({
-      'left': ('-' + (windowWidth * index) + 'px')
-    },
-    440
-    );
+    // If this is not the current section.
+    if (!$(this).hasClass('active')){
+
+      // Remove the active class from the other items and add it to this one.
+      navigationItems.removeClass('active');
+      $(this).addClass('active');
+
+      // Slide to the right position.
+      body.animate({
+        'left': ('-' + (windowWidth * index) + 'px')
+        },
+      800,
+      // Update the url.
+      function() {
+        window.location.replace(location + '#' + sectionName);
+      }
+      );
+    } else {
+      // Scroll to the top.
+      section.animate({scrollTop : 0}, 400);
+    };
 
   };
 

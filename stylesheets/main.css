@@ -38,7 +38,8 @@
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: transparent; }
-  #nav span:hover {
+  #nav span:hover,
+  #nav span.active {
     cursor: pointer;
     border-bottom-color: #fff; }
   #nav ul {
@@ -1144,55 +1145,78 @@ body.ready #nav {
   top: 30px; }
 #collections > *:nth-child(2) > *:nth-child(4) {
   top: 300px; }
-#collections > *:nth-child(3) > *:nth-child(2) {
-  top: 120px; }
-#collections > *:nth-child(5) > *:nth-child(1) {
-  top: 30px; }
-#collections > *:nth-child(5) > *:nth-child(2) {
-  top: 130px; }
-#collections > *:nth-child(5) > *:nth-child(3) {
-  top: 70px; }
-#collections > *:nth-child(6) > *:nth-child(1) {
-  top: 80px;
-  z-index: 1; }
-#collections > *:nth-child(6) > *:nth-child(2) {
-  top: 50px; }
-#collections > *:nth-child(8) > *:nth-child(1) {
-  top: 80px; }
-#collections > *:nth-child(8) > *:nth-child(2) {
-  top: 140px; }
-#collections > *:nth-child(9) > *:nth-child(1) {
-  top: 150px;
-  z-index: 1; }
-#collections > *:nth-child(9) > *:nth-child(2) {
-  top: 50px; }
-#collections > *:nth-child(11) > *:nth-child(1) {
-  top: 20px; }
-#collections > *:nth-child(11) > *:nth-child(2) {
-  top: 170px;
-  z-index: 1; }
-#collections > *:nth-child(11) > *:nth-child(3) {
-  top: 20px; }
-#collections > *:nth-child(12) > *:nth-child(1) {
-  top: 150px; }
-#collections > *:nth-child(12) > *:nth-child(2) {
-  z-index: 1; }
-#collections > *:nth-child(12) > *:nth-child(3) {
-  top: 230px; }
-#collections > *:nth-child(14) > *:nth-child(1) {
-  top: 50px; }
-#collections > *:nth-child(14) > *:nth-child(2) {
-  top: 120px; }
-#collections > *:nth-child(16) > *:nth-child(1) {
-  top: 120px; }
-#collections > *:nth-child(16) > *:nth-child(2) {
-  top: 70px;
+#collections > *:nth-child(3) {
+  height: 90%; }
+  #collections > *:nth-child(3) > *:nth-child(2) {
+    top: 120px; }
+#collections > *:nth-child(5) {
+  height: 85%; }
+  #collections > *:nth-child(5) > *:nth-child(1) {
+    top: 30px; }
+  #collections > *:nth-child(5) > *:nth-child(2) {
+    top: 130px; }
+  #collections > *:nth-child(5) > *:nth-child(3) {
+    top: 70px; }
+#collections > *:nth-child(6) {
+  height: 75%; }
+  #collections > *:nth-child(6) > *:nth-child(1) {
+    top: 80px;
+    z-index: 1; }
+  #collections > *:nth-child(6) > *:nth-child(2) {
+    top: 50px; }
+#collections > *:nth-child(7) {
+  height: 90%; }
+#collections > *:nth-child(8) {
+  height: 80%; }
+  #collections > *:nth-child(8) > *:nth-child(1) {
+    top: 80px; }
+  #collections > *:nth-child(8) > *:nth-child(2) {
+    top: 140px; }
+#collections > *:nth-child(9) {
+  height: 75%; }
+  #collections > *:nth-child(9) > *:nth-child(1) {
+    top: 150px;
+    z-index: 1; }
+  #collections > *:nth-child(9) > *:nth-child(2) {
+    top: 50px; }
+#collections > *:nth-child(10) {
+  height: 90%;
   z-index: 2; }
-#collections > *:nth-child(16) > *:nth-child(3) {
-  top: 250px;
-  z-index: 1; }
-#collections > *:nth-child(16) > *:nth-child(4) {
-  top: 310px; }
+#collections > *:nth-child(11) {
+  height: 70%; }
+  #collections > *:nth-child(11) > *:nth-child(1) {
+    top: 20px; }
+  #collections > *:nth-child(11) > *:nth-child(2) {
+    top: 170px;
+    z-index: 1; }
+  #collections > *:nth-child(11) > *:nth-child(3) {
+    top: 20px; }
+#collections > *:nth-child(12) {
+  height: 80%; }
+  #collections > *:nth-child(12) > *:nth-child(1) {
+    top: 150px; }
+  #collections > *:nth-child(12) > *:nth-child(2) {
+    z-index: 1; }
+  #collections > *:nth-child(12) > *:nth-child(3) {
+    top: 230px; }
+#collections > *:nth-child(14) {
+  height: 80%; }
+  #collections > *:nth-child(14) > *:nth-child(1) {
+    top: 50px; }
+  #collections > *:nth-child(14) > *:nth-child(2) {
+    top: 120px; }
+#collections > *:nth-child(16) {
+  height: 70%; }
+  #collections > *:nth-child(16) > *:nth-child(1) {
+    top: 120px; }
+  #collections > *:nth-child(16) > *:nth-child(2) {
+    top: 70px;
+    z-index: 2; }
+  #collections > *:nth-child(16) > *:nth-child(3) {
+    top: 250px;
+    z-index: 1; }
+  #collections > *:nth-child(16) > *:nth-child(4) {
+    top: 310px; }
 #collections > *:nth-child(17) > *:nth-child(1) {
   top: 180px; }
 #collections > *:nth-child(17) > *:nth-child(2) {
@@ -1309,6 +1333,7 @@ html body {
     border-bottom-color: transparent; }
   html body a:hover,
   html body a:active,
+  html body a.active,
   html body a:focus {
     cursor: pointer;
     border-bottom-color: #000; }

@@ -38,7 +38,8 @@
     border-bottom-style: solid;
     border-bottom-color: transparent;
   }
-  span:hover{
+  span:hover,
+  span.active {
     cursor: pointer;
     border-bottom-color: #fff;
   }

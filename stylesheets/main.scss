@@ -113,6 +113,7 @@ html {
     }
     a:hover,
     a:active,
+    a.active,
     a:focus {
       cursor: pointer;
       border-bottom-color: #000;
