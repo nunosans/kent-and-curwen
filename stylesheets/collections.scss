@@ -88,9 +88,10 @@
   }
 
   > *:nth-child(17) {
+    height: 110%;
     > *:nth-child(1) {top: 180px;}
     > *:nth-child(2) {top: 50px; z-index: 1;}
-    > *:nth-child(3) {top: 350px;}
+    > *:nth-child(3) {top: 320px;}
     > *:nth-child(4) {top: 160px;}
   }
 

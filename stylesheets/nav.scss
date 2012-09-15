@@ -24,6 +24,10 @@
     top: 25px;
     width: 75px;
   }
+  #symbol:hover,
+  #symbol.active {
+    border-bottom-color: transparent;
+  }
   span {
     color: #fff;
     -webkit-transition-property: border-bottom-color;

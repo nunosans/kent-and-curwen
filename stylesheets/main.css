@@ -25,6 +25,9 @@
     position: absolute;
     top: 25px;
     width: 75px; }
+  #nav #symbol:hover,
+  #nav #symbol.active {
+    border-bottom-color: transparent; }
   #nav span {
     color: #fff;
     -webkit-transition-property: border-bottom-color;
@@ -1217,15 +1220,17 @@ body.ready #nav {
     z-index: 1; }
   #collections > *:nth-child(16) > *:nth-child(4) {
     top: 310px; }
-#collections > *:nth-child(17) > *:nth-child(1) {
-  top: 180px; }
-#collections > *:nth-child(17) > *:nth-child(2) {
-  top: 50px;
-  z-index: 1; }
-#collections > *:nth-child(17) > *:nth-child(3) {
-  top: 350px; }
-#collections > *:nth-child(17) > *:nth-child(4) {
-  top: 160px; }
+#collections > *:nth-child(17) {
+  height: 110%; }
+  #collections > *:nth-child(17) > *:nth-child(1) {
+    top: 180px; }
+  #collections > *:nth-child(17) > *:nth-child(2) {
+    top: 50px;
+    z-index: 1; }
+  #collections > *:nth-child(17) > *:nth-child(3) {
+    top: 320px; }
+  #collections > *:nth-child(17) > *:nth-child(4) {
+    top: 160px; }
 #collections > *:nth-child(40) {
   height: 200%; }
 
