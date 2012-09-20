@@ -7,20 +7,6 @@
 
 @charset "UTF-8";
 
-// Interface elements
-@import "nav.scss";
-
-// Sections
-@import "home.scss";
-@import "home.header.scss";
-@import "collections.scss";
-@import "heritage.scss";
-@import "news.scss";
-@import "stores.scss";
-
-// Media Queries
-@import "queries.scss";
-
 // Browser Reset
 html, body,
 h1, h2, h3, h4, h5, h6, p,
@@ -76,6 +62,13 @@ html {
       line-height: 72px;
       letter-spacing: 8px;
       word-spacing: 16px;
+      i {
+        // display: inline-block;
+        // margin-top: 80px;
+        font-family: 'Filosita', serif;
+        text-transform: none;
+        letter-spacing: 2px;
+      }
     }
     h2 {
       font-size: 34px;
@@ -148,8 +141,6 @@ html {
   h1 {
     color: white;
     text-align: center;
-    top: 40%;
-    position: absolute;
     width: 100%;
     z-index: 2;
     left: 0 !important;
@@ -162,7 +153,9 @@ html {
 }
 
 // Images with width based on class.
+.w18  {width:  18%;} //  518px on 15" Retina.
 .w21  {width:  21%;} //  605px on 15" Retina.
+.w23  {width:  23%;} //  662px on 15" Retina.
 .w25  {width:  25%;} //  720px on 15" Retina.
 .w28  {width:  28%;} //  807px on 15" Retina.
 .w31  {width:  31%;} //  893px on 15" Retina.
@@ -171,20 +164,48 @@ html {
 .w40  {width:  40%;} // 1152px on 15" Retina.
 .w42  {width:  42%;} // 1210px on 15" Retina.
 .w49  {width:  49%;} // 1412px on 15" Retina.
+.w50  {width:  50%;} // 1440px on 15" Retina.
+.w62  {width:  62%;} // 1785px on 15" Retina.
+.w68  {width:  68%;} // 1958px on 15" Retina.
+.w80  {width:  80%;} // 2304px on 15" Retina.
 .full {width: 100%;} // 2880px on 15" Retina.
 
 // Images with position based on class.
 .full {left:  0% !important;}
+.l2   {left:  2% !important;}
+.l6   {left:  6% !important;}
 .l11  {left: 11% !important;}
+.l14  {left: 14% !important;}
+.l17  {left: 17% !important;}
 .l24  {left: 24% !important;}
+.l25  {left: 25% !important;}
 .l26  {left: 26% !important;}
 .l28  {left: 28% !important;}
 .l31  {left: 31% !important;}
 .l36  {left: 36% !important;}
+.l38  {left: 38% !important;}
+.l40  {left: 40% !important;}
+.l44  {left: 44% !important;}
 .l47  {left: 47% !important;}
 .l50  {left: 50% !important;}
+.l52  {left: 52% !important;}
 .l54  {left: 54% !important;}
 .l57  {left: 57% !important;}
 .l61  {left: 61% !important;}
 .l66  {left: 66% !important;}
 .l74  {left: 74% !important;}
+.l79  {left: 79% !important;}
+
+// Interface elements
+@import "nav.scss";
+
+// Sections
+@import "home.scss";
+@import "home.header.scss";
+@import "collections.scss";
+@import "heritage.scss";
+@import "news.scss";
+@import "stores.scss";
+
+// Media Queries
+@import "queries.scss";
