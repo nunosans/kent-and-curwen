@@ -328,7 +328,7 @@ html body {
     opacity: 0; }
 
 #nav.hidden:hover {
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: rgba(0, 0, 0, 0.75); }
   #nav.hidden:hover #symbol,
   #nav.hidden:hover ul {
     opacity: 1; }
@@ -1660,7 +1660,8 @@ body.ready #nav {
     top: 40%; }
 
 #news {
-  padding-top: 230px; }
+  padding-top: 200px;
+  position: relative; }
   #news > div {
     width: 100%;
     float: left;
@@ -1674,6 +1675,7 @@ body.ready #nav {
     #news .text > * {
       width: 100%; }
   #news .images {
+    margin-top: 50px;
     float: right;
     width: 65%; }
     #news .images .col {

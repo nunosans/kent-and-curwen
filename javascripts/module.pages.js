@@ -27,6 +27,7 @@ function pages(element) {
     var sectionName = $(this).attr('rel');
     var section = $('#' + sectionName);
     var index = $('span').index(this);
+    var newsArticle = $('#news .article.sticky div.text');
 
     // If this is not the current section.
     if (!$(this).hasClass('active')){
@@ -47,6 +48,11 @@ function pages(element) {
           // window.location.replace(location + '#' + sectionName);
         // };
       // }
+      );
+      newsArticle.animate({
+        'left': ( -(windowWidth * (index - 3)) + 'px')
+        },
+      400
       );
 
       // Update nav

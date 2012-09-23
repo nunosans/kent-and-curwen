@@ -1,6 +1,7 @@
 #news {
 
-  padding-top: 230px;
+  padding-top: 200px;
+  position: relative;
 
   > div {
     width: 100%;
@@ -20,6 +21,7 @@
   }
 
   .images {
+    margin-top: 50px;
     float: right;
     width: 65%;
     .col {
