@@ -53,7 +53,11 @@ html body {
       font-family: 'Filosita', serif;
       text-transform: none;
       letter-spacing: 2px;
-      font-weight: 400; }
+      font-weight: 400;
+      -webkit-font-smoothing: subpixel-antialiased;
+      -moz-font-smoothing: subpixel-antialiased;
+      -o-font-smoothing: subpixel-antialiased;
+      font-smoothing: subpixel-antialiased; }
   html body h2 {
     font-size: 34px;
     line-height: 51px;
@@ -1698,6 +1702,8 @@ body.ready #nav {
   top: 0;
   left: 0; }
 
+#stores * {
+  overflow: hidden; }
 #stores > div {
   width: 100%;
   height: 100%;
@@ -1722,7 +1728,7 @@ body.ready #nav {
   #stores ul li {
     font-weight: 400;
     margin-bottom: 20px;
-    display: inline-block; }
+    min-height: 50px; }
   #stores ul i {
     font-family: 'Filosita', serif;
     font-style: italic;
@@ -1748,9 +1754,13 @@ body.ready #nav {
     font-style: normal;
     font-weight: normal;
     font-weight: 400;
-    font-size: .9em; }
+    font-size: .9em;
+    display: inline-block; }
     .addresses li h5 {
       font-size: 1em; }
+
+ul.closed {
+  height: 0 !important; }
 
 /* Average screen size */
 @media only screen and (max-width: 1125px) {

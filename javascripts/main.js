@@ -17,6 +17,7 @@ $(document).ready(function() {
     // Call modules.
     cover('#home .cover');
     pages('.section');
+    dropdowns('#stores > ul');
 
     $('body').stickySectionHeaders({
       stickyClass: 'sticky',
