@@ -125,6 +125,9 @@ html {
   width: 100%;
   // Add native style momentum to scrolling.
   // -webkit-overflow-scrolling: touch;
+}
+
+.parallax {
   > * {
     display: block;
     width: 100%;

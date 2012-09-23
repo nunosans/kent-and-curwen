@@ -11,7 +11,7 @@ function pages(element) {
 
   var body = $('body');
   var sections = $('.section');
-  var screens = $('.section > *');
+  var screens = $('.parallax > *');
   var navigation = $('#nav');
   var navigationItems = navigation.find('span');
   var windowWidth = $(window).width();

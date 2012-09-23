@@ -1,2 +1,44 @@
-#news > *:nth-child(1)  {}
-#news > *:nth-child(1) > *:nth-child(1) {top: 300px;}
+#news {
+
+  > div {
+    width: 85%;
+    float: right;
+    margin-bottom: 160px;
+  }
+
+  .text {
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+    p {
+      width: 100%;
+    }
+  }
+
+  .images {
+    display: block;
+    float: right;
+    width: 65%;
+    .col {
+      border-top: 3px solid #fff;
+      width: 33.4%;
+      float: left;
+      img {
+        width: 99%;
+        border-bottom: 3px solid #fff;
+      }
+    }
+    .col:last-child {
+      img {
+        width: 100%;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      float: left;
+    }
+  }
+
+}

@@ -5,10 +5,9 @@
  * @author nuno@savantstudio.co.uk (Nuno Coelho Santos).
  */
 
-
-
 $(document).ready(function() {
 
+  // Rewrite the appropriate images path.
   resolute();
 
   $(window).load(function() {
@@ -20,8 +19,6 @@ $(document).ready(function() {
     pages('.section');
 
     $('.section').stellar({
-      // scrollProperty: 'transform',
-      // positionProperty: 'transform',
       hideDistantElements: false,
       verticalOffset: 0
     });
