@@ -1728,7 +1728,15 @@ body.ready #nav {
   #stores ul li {
     font-weight: 400;
     margin-bottom: 20px;
-    min-height: 50px; }
+    min-height: 50px;
+    -webkit-transition-property: height;
+    -moz-transition-property: height;
+    -o-transition-property: height;
+    transition-property: height;
+    -webkit-transition-duration: 0.75s;
+    -moz-transition-duration: 0.75s;
+    -o-transition-duration: 0.75s;
+    transition-duration: 0.75s; }
   #stores ul i {
     font-family: 'Filosita', serif;
     font-style: italic;
@@ -1736,9 +1744,24 @@ body.ready #nav {
     -moz-font-smoothing: subpixel-antialiased;
     -o-font-smoothing: subpixel-antialiased;
     font-smoothing: subpixel-antialiased; }
-  #stores ul h3, #stores ul h4 {
-    clear: both; }
-  #stores ul h3, #stores ul h4, #stores ul h5 {
+  #stores ul h3,
+  #stores ul h4 {
+    clear: both;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s; }
+  #stores ul h3:hover,
+  #stores ul h4:hover {
+    cursor: pointer;
+    color: #666; }
+  #stores ul h3,
+  #stores ul h4,
+  #stores ul h5 {
     font-weight: 900;
     margin: 0 0 30px 0; }
 
@@ -1759,8 +1782,8 @@ body.ready #nav {
     .addresses li h5 {
       font-size: 1em; }
 
-ul.closed {
-  height: 0 !important; }
+li.closed {
+  height: 40px !important; }
 
 /* Average screen size */
 @media only screen and (max-width: 1125px) {
