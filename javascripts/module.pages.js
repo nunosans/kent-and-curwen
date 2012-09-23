@@ -21,6 +21,8 @@ function pages(element) {
 
   function slide() {
 
+    console.log('Initializing "slide".');
+
     // Declare variables.
     var sectionName = $(this).attr('rel');
     var section = $('#' + sectionName);
@@ -28,6 +30,7 @@ function pages(element) {
 
     // If this is not the current section.
     if (!$(this).hasClass('active')){
+      console.log('Moving to different section.');
 
       // Remove the active class from the other items and add it to this one.
       navigationItems.removeClass('active');
@@ -40,7 +43,9 @@ function pages(element) {
       400,
       function() {
         // Update the url.
-        window.location.replace(location + '#' + sectionName);
+        if (currentSection !== 'undefined') {
+          window.location.replace(location + '#' + sectionName);
+        };
       }
       );
 
@@ -51,6 +56,7 @@ function pages(element) {
 
       // Scroll to the top.
       section.animate({scrollTop : 0}, 1200);
+      console.log('Scrolling to the top of this section.');
     };
 
   };
