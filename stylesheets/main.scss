@@ -52,6 +52,7 @@ html {
     h1, h2, h3, h4, h5, h6 {
       font-family: "brandon-grotesque", Helvetica, sans-serif;
       font-style: normal;
+      font-weight: 900;
       text-transform: uppercase;
       -webkit-font-smoothing: antialiased;
          -moz-font-smoothing: antialiased;
@@ -69,6 +70,11 @@ html {
         font-family: 'Filosita', serif;
         text-transform: none;
         letter-spacing: 2px;
+        font-weight: 400;
+        -webkit-font-smoothing: subpixel-antialiased;
+           -moz-font-smoothing: subpixel-antialiased;
+             -o-font-smoothing: subpixel-antialiased;
+                font-smoothing: subpixel-antialiased;
       }
     }
     h2 {

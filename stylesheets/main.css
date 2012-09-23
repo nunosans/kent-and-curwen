@@ -38,6 +38,7 @@ html body {
   html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
     font-family: "brandon-grotesque", Helvetica, sans-serif;
     font-style: normal;
+    font-weight: 900;
     text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -51,7 +52,8 @@ html body {
     html body h1 i {
       font-family: 'Filosita', serif;
       text-transform: none;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      font-weight: 400; }
   html body h2 {
     font-size: 34px;
     line-height: 51px;
@@ -249,7 +251,8 @@ html body {
   height: 200px;
   top: 0;
   width: 100%;
-  z-index: 10; }
+  z-index: 10;
+  font-weight: 900; }
   #nav #symbol {
     background: url(../graphics/sprite-logotype.png) 0px 0px no-repeat;
     background-size: 772px 150px;
@@ -310,16 +313,19 @@ html body {
 
 #nav.top {
   background-color: rgba(0, 0, 0, 0); }
+  #nav.top #symbol,
   #nav.top ul {
     opacity: 1; }
 
 #nav.hidden {
   background-color: rgba(0, 0, 0, 0); }
+  #nav.hidden #symbol,
   #nav.hidden ul {
     opacity: 0; }
 
 #nav.hidden:hover {
   background-color: rgba(0, 0, 0, 0.6); }
+  #nav.hidden:hover #symbol,
   #nav.hidden:hover ul {
     opacity: 1; }
 
@@ -335,11 +341,12 @@ html body {
   -o-transition-duration: .35s;
   transition-duration: .35s; }
 
+#nav #symbol,
 #nav ul {
-  -webkit-transition-property: background-color, opacity;
-  -moz-transition-property: background-color, opacity;
-  -o-transition-property: background-color, opacity;
-  transition-property: background-color, opacity;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
   -webkit-transition-duration: .35s;
   -moz-transition-duration: .35s;
   -o-transition-duration: .35s;
@@ -1657,12 +1664,13 @@ body.ready #nav {
   top: 80%; }
 
 #news > div {
-  width: 85%;
-  float: right;
+  width: 100%;
+  float: left;
   margin-bottom: 160px; }
 #news .text {
   margin-top: 50px;
-  width: 340px;
+  margin-left: 5%;
+  width: 25%;
   text-align: center; }
   #news .text > * {
     width: 100%; }
@@ -1671,13 +1679,15 @@ body.ready #nav {
   width: 65%; }
   #news .images .col {
     border-top: 3px solid #fff;
-    width: 33.4%;
+    width: 33.3%;
     float: left; }
     #news .images .col img {
       width: 99%;
       border-bottom: 3px solid #fff; }
-  #news .images .col:last-child img {
-    width: 100%; }
+  #news .images .col:last-child {
+    float: right; }
+    #news .images .col:last-child img {
+      width: 100%; }
   #news .images img {
     width: 100%;
     height: auto;
@@ -1686,7 +1696,7 @@ body.ready #nav {
 .article.sticky .text {
   position: fixed;
   top: 0;
-  left: 15%; }
+  left: 0; }
 
 #stores > div {
   width: 100%;
@@ -1703,8 +1713,44 @@ body.ready #nav {
     width: 100%;
     height: auto; }
 #stores > ul {
-  width: 85%;
-  margin-left: 15%; }
+  width: 90%;
+  margin: 160px 5%; }
+  #stores > ul > li {
+    width: 100%; }
+#stores ul {
+  list-style-type: none; }
+  #stores ul li {
+    font-weight: 400;
+    margin-bottom: 20px;
+    display: inline-block; }
+  #stores ul i {
+    font-family: 'Filosita', serif;
+    font-style: italic;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-font-smoothing: subpixel-antialiased;
+    -o-font-smoothing: subpixel-antialiased;
+    font-smoothing: subpixel-antialiased; }
+  #stores ul h3, #stores ul h4 {
+    clear: both; }
+  #stores ul h3, #stores ul h4, #stores ul h5 {
+    font-weight: 900;
+    margin: 0 0 30px 0; }
+
+.addresses {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px; }
+  .addresses li {
+    font-family: "brandon-grotesque", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-weight: 400;
+    font-size: .9em; }
+    .addresses li h5 {
+      font-size: 1em; }
 
 /* Average screen size */
 @media only screen and (max-width: 1125px) {
