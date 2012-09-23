@@ -24,8 +24,11 @@
 
     return $(this).each(function() {
       var $this = $(this);
-      $(this).find('ul:first').bind('scroll.sticky', function(e) {
-        $(this).find('> li').each(function() {
+      // console.log($(this));
+      $(this).find('#news').bind('scroll.sticky', function(e) {
+        // console.log($(this));
+        $(this).find('> div').each(function() {
+          // console.log($(this));
           var $this      = $(this),
               top        = $this.position().top,
               height     = $this.outerHeight(),
@@ -36,7 +39,7 @@
             $this.addClass(settings.stickyClass).css('paddingTop', headHeight);
             $head.css({
               'top'  : (height + top < headHeight) ? (headHeight - (top + height)) * -1 : '',
-              'width': $this.outerWidth() - $head.cssSum('paddingLeft', 'paddingRight')
+              // 'width': $this.outerWidth() - $head.cssSum('paddingLeft', 'paddingRight')
             });
           } else {
             $this.removeClass(settings.stickyClass).css('paddingTop', '');

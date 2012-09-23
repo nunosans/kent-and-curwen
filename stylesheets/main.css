@@ -10,7 +10,8 @@ h1, h2, h3, h4, h5, h6, p,
   padding: 0; }
 
 html, body {
-  background-color: #000; }
+  background-color: #000;
+  position: relative; }
 
 .inactive {
   pointer-events: none;
@@ -1660,14 +1661,11 @@ body.ready #nav {
   float: right;
   margin-bottom: 160px; }
 #news .text {
-  display: block;
-  float: left;
-  width: 30%;
+  width: 340px;
   text-align: center; }
-  #news .text p {
+  #news .text > * {
     width: 100%; }
 #news .images {
-  display: block;
   float: right;
   width: 65%; }
   #news .images .col {
@@ -1683,6 +1681,11 @@ body.ready #nav {
     width: 100%;
     height: auto;
     float: left; }
+
+.article.sticky .text {
+  position: fixed;
+  top: 0;
+  left: 15%; }
 
 #stores > *:nth-child(1) > *:nth-child(1) {
   top: 300px; }

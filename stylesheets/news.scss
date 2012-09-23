@@ -7,17 +7,14 @@
   }
 
   .text {
-    display: block;
-    float: left;
-    width: 30%;
+    width: 340px;
     text-align: center;
-    p {
+    > * {
       width: 100%;
     }
   }
 
   .images {
-    display: block;
     float: right;
     width: 65%;
     .col {
@@ -41,4 +38,12 @@
     }
   }
 
+}
+
+.article.sticky {
+  .text {
+    position: fixed;
+    top: 0;
+    left: 15%;
+  }
 }

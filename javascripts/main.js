@@ -18,6 +18,11 @@ $(document).ready(function() {
     cover('#home .cover');
     pages('.section');
 
+    $('body').stickySectionHeaders({
+      stickyClass: 'sticky',
+      headlineSelector: '.text'
+    });
+
     $('.section').stellar({
       hideDistantElements: false,
       verticalOffset: 0
