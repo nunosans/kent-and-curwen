@@ -1,5 +1,7 @@
 #news {
 
+  padding-top: 230px;
+
   > div {
     width: 100%;
     float: left;
@@ -41,7 +43,6 @@
       float: left;
     }
   }
-
 }
 
 .article.sticky {

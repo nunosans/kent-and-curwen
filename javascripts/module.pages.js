@@ -40,13 +40,13 @@ function pages(element) {
       body.animate({
         'left': ('-' + (windowWidth * index) + 'px')
         },
-      400,
-      function() {
+      400
+      // function() {
         // Update the url.
-        if (currentSection !== 'undefined') {
-          window.location.replace(location + '#' + sectionName);
-        };
-      }
+        // if (currentSection !== 'undefined') {
+          // window.location.replace(location + '#' + sectionName);
+        // };
+      // }
       );
 
       // Update nav
@@ -67,11 +67,17 @@ function pages(element) {
       element = $(this);
     };
 
+    var sectionName = element.attr('id');
+
     if( element.scrollTop() > 50 ) {
       navigation.removeClass('top');
       navigation.addClass('hidden');
     } else {
-      navigation.addClass('top');
+      if (sectionName === 'news') {
+        navigation.removeClass('top');
+      } else {
+        navigation.addClass('top');
+      }
       navigation.removeClass('hidden');
     }
   };
