@@ -55,12 +55,12 @@
    * EXAMPLE:
    * $('#my-div').cssSum('paddingLeft', 'paddingRight');
    */
-  $.fn.cssSum = function() {
-    var $self = $(this), sum = 0;
-    $(arguments).each(function(i, e) {
-      sum += parseInt($self.css(e) || 0, 10);
-    });
-    return sum;
-  };
+  // $.fn.cssSum = function() {
+  //   var $self = $(this), sum = 0;
+  //   $(arguments).each(function(i, e) {
+  //     sum += parseInt($self.css(e) || 0, 10);
+  //   });
+  //   return sum;
+  // };
 
 })(jQuery);
