@@ -36,13 +36,15 @@
               headHeight = $head.outerHeight();
 
           if (top < 0) {
-            $this.addClass(settings.stickyClass).css('paddingTop', headHeight);
+            // $this.addClass(settings.stickyClass).css('paddingTop', headHeight);
+            $this.addClass(settings.stickyClass);
             $head.css({
               'top'  : (height + top < headHeight) ? (headHeight - (top + height)) * -1 : '',
               // 'width': $this.outerWidth() - $head.cssSum('paddingLeft', 'paddingRight')
             });
           } else {
-            $this.removeClass(settings.stickyClass).css('paddingTop', '');
+            // $this.removeClass(settings.stickyClass).css('paddingTop', '');
+            $this.removeClass(settings.stickyClass);
           }
         });
       });
