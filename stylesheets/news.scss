@@ -22,6 +22,7 @@
 
   .images {
     margin-top: 50px;
+    margin-bottom: 100px;
     float: right;
     width: 65%;
     .col {
@@ -45,6 +46,14 @@
       float: left;
     }
   }
+}
+
+.article {
+
+  ul {
+    list-style-type: none;
+  }
+
 }
 
 .article.sticky {

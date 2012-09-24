@@ -1676,6 +1676,7 @@ body.ready #nav {
       width: 100%; }
   #news .images {
     margin-top: 50px;
+    margin-bottom: 100px;
     float: right;
     width: 65%; }
     #news .images .col {
@@ -1693,6 +1694,9 @@ body.ready #nav {
       width: 100%;
       height: auto;
       float: left; }
+
+.article ul {
+  list-style-type: none; }
 
 .article.sticky .text {
   position: fixed;
