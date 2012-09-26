@@ -306,7 +306,7 @@ function dropdowns(element) {
 $(document).ready(function() {
 
   // Rewrite the appropriate images path.
-  resolute();
+  // resolute();
 
   $(window).load(function() {
     // Add class ready to the body.

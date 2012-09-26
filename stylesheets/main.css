@@ -272,7 +272,7 @@ html body {
   #nav #symbol:hover,
   #nav #symbol.active {
     border-bottom-color: transparent; }
-  #nav span {
+  #nav a {
     color: #fff;
     -webkit-transition-property: border-bottom-color;
     -moz-transition-property: border-bottom-color;
@@ -285,8 +285,8 @@ html body {
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: transparent; }
-  #nav span:hover,
-  #nav span.active {
+  #nav a:hover,
+  #nav a.active {
     cursor: pointer;
     border-bottom-color: #fff; }
   #nav ul {
@@ -309,7 +309,7 @@ html body {
       -moz-font-smoothing: antialiased;
       -o-font-smoothing: antialiased;
       font-smoothing: antialiased; }
-      #nav ul li span i {
+      #nav ul li a i {
         letter-spacing: 1px;
         font-family: 'Filosita', serif;
         font-style: italic;

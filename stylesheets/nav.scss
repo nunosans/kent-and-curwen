@@ -30,7 +30,7 @@
   #symbol.active {
     border-bottom-color: transparent;
   }
-  span {
+  a {
     color: #fff;
     -webkit-transition-property: border-bottom-color;
        -moz-transition-property: border-bottom-color;
@@ -44,8 +44,8 @@
     border-bottom-style: solid;
     border-bottom-color: transparent;
   }
-  span:hover,
-  span.active {
+  a:hover,
+  a.active {
     cursor: pointer;
     border-bottom-color: #fff;
   }
@@ -71,7 +71,7 @@
          -moz-font-smoothing: antialiased;
            -o-font-smoothing: antialiased;
               font-smoothing: antialiased;
-      span i {
+      a i {
         letter-spacing: 1px;
         font-family: 'Filosita', serif;
         font-style: italic;
