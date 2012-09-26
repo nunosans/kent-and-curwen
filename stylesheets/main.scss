@@ -27,20 +27,29 @@ html, body {
 
 // Custom Typefaces
 @font-face {
-  font-family:  'Filosita';
-  font-weight:  normal;
+  font-family: "Filosita";
   font-style: italic;
-  font-variant: normal;
-  src: local('Filosita'),
-  url(/typefaces/filosita.eot) format('embedded-opentype'),
-  url(/typefaces/filosita.eot?#iefix) format('embedded-opentype'),
-  url(/typefaces/filosita.woff) format('woff')
+  src: local("Filosita"),
+  url("/typefaces/filosita.eot") format("embedded-opentype"),
+  url("/typefaces/filosita.eot?#iefix") format("embedded-opentype"),
+  url("/typefaces/filosita.woff") format("woff");
+}
+
+// Custom Typefaces
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Brandon Grotesque"),
+  url("/typefaces/brandon-grotesque.eot") format("embedded-opentype"),
+  url("/typefaces/brandon-grotesque.eot?#iefix") format("embedded-opentype"),
+  url("/typefaces/brandon-grotesque.woff") format("woff");
 }
 
 html {
   body {
     overflow: hidden;
-    font-family: 'Filosita', serif;
+    font-family: "Filosita", serif;
     text-transform: none;
     letter-spacing: 1px;
     font-style: italic;
@@ -50,7 +59,7 @@ html {
     font-size: 17px;
     line-height: 21px;
     h1, h2, h3, h4, h5, h6 {
-      font-family: "brandon-grotesque", Helvetica, sans-serif;
+      font-family: "Brandon Grotesque", Helvetica, sans-serif;
       font-style: normal;
       font-weight: 900;
       text-transform: uppercase;
@@ -67,7 +76,7 @@ html {
       i {
         // display: inline-block;
         // margin-top: 80px;
-        font-family: 'Filosita', serif;
+        font-family: "Filosita", serif;
         text-transform: none;
         letter-spacing: 2px;
         font-weight: 400;

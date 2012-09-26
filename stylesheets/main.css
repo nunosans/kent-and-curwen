@@ -18,15 +18,19 @@ html, body {
   opacity: .5; }
 
 @font-face {
-  font-family: 'Filosita';
-  font-weight: normal;
+  font-family: "Filosita";
   font-style: italic;
-  font-variant: normal;
-  src: local("Filosita"), url(/typefaces/filosita.eot) format("embedded-opentype"), url(/typefaces/filosita.eot?#iefix) format("embedded-opentype"), url(/typefaces/filosita.woff) format("woff"); }
+  src: local("Filosita"), url("/typefaces/filosita.eot") format("embedded-opentype"), url("/typefaces/filosita.eot?#iefix") format("embedded-opentype"), url("/typefaces/filosita.woff") format("woff"); }
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Brandon Grotesque"), url("/typefaces/brandon-grotesque.eot") format("embedded-opentype"), url("/typefaces/brandon-grotesque.eot?#iefix") format("embedded-opentype"), url("/typefaces/brandon-grotesque.woff") format("woff"); }
 
 html body {
   overflow: hidden;
-  font-family: 'Filosita', serif;
+  font-family: "Filosita", serif;
   text-transform: none;
   letter-spacing: 1px;
   font-style: italic;
@@ -36,7 +40,7 @@ html body {
   font-size: 17px;
   line-height: 21px; }
   html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
-    font-family: "brandon-grotesque", Helvetica, sans-serif;
+    font-family: "Brandon Grotesque", Helvetica, sans-serif;
     font-style: normal;
     font-weight: 900;
     text-transform: uppercase;
@@ -50,7 +54,7 @@ html body {
     letter-spacing: 8px;
     word-spacing: 16px; }
     html body h1 i {
-      font-family: 'Filosita', serif;
+      font-family: "Filosita", serif;
       text-transform: none;
       letter-spacing: 2px;
       font-weight: 400;
@@ -300,7 +304,7 @@ html body {
     font-smoothing: antialiased; }
     #nav ul li {
       display: inline-block;
-      font-family: "brandon-grotesque", Helvetica, sans-serif;
+      font-family: "Brandon Grotesque", Helvetica, sans-serif;
       font-style: normal;
       letter-spacing: 3px;
       margin-left: 15px;
@@ -1739,7 +1743,7 @@ body.ready #nav {
     -o-transition-duration: 0.75s;
     transition-duration: 0.75s; }
   #stores ul i {
-    font-family: 'Filosita', serif;
+    font-family: "Filosita", serif;
     font-style: italic;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-font-smoothing: subpixel-antialiased;
@@ -1774,7 +1778,7 @@ body.ready #nav {
   -moz-column-gap: 40px;
   column-gap: 40px; }
   .addresses li {
-    font-family: "brandon-grotesque", Helvetica, sans-serif;
+    font-family: "Brandon Grotesque", Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-weight: 400;
