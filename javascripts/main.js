@@ -122,6 +122,8 @@ function pages(element) {
  */
 function cover(element) {
 
+  console.log('cover');
+
   el = $(element);
 
   // Define this object's elements.
@@ -152,6 +154,8 @@ function cover(element) {
   });
 
   function resize() {
+
+    console.log('cover.resize');
 
     // Redefine variables.
     var windowWidth = $(window).width();
@@ -188,15 +192,23 @@ function cover(element) {
 
   function swap() {
 
+    console.log('cover.swap');
+
     var first = el.find('img:first-child');
+    console.log(first);
     first.addClass('active');
 
     setInterval(function() {
 
+      console.log('swapping images');
+
       var active = el.find('img.active');
+      console.log(active);
       var next = active.next();
+      console.log(next);
 
       if (!active.next().length) {
+        console.log('loop');
         next = first;
       };
 
@@ -205,6 +217,8 @@ function cover(element) {
 
       // Make the next image active.
       next.addClass('active');
+
+      console.log('done');
 
     },
     7000);
@@ -263,7 +277,6 @@ function dropdowns(element) {
 $(document).ready(function() {
 
   // Call modules.
-  cover('#home .cover');
   pages('.section');
   dropdowns('#stores > ul');
 
@@ -280,6 +293,7 @@ $(document).ready(function() {
   $(window).load(function() {
     // Add class ready to the body.
     $('body').addClass('ready');
+    cover('#home .cover');
 
   });
 
