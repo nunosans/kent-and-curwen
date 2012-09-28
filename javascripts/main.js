@@ -196,6 +196,7 @@ function cover(element) {
 
     var first = el.find('img:first-child');
     console.log(first);
+
     first.addClass('active');
 
     setInterval(function() {
@@ -283,15 +284,23 @@ $(document).ready(function() {
 
   dropdowns('#stores > ul');
 
-  $('body').stickySectionHeaders({
-    stickyClass: 'sticky',
-    headlineSelector: '.text'
-  });
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    // Mobile specific actions.
+  } else {
+    $('body').stickySectionHeaders({
+      stickyClass: 'sticky',
+      headlineSelector: '.text'
+    });
 
-  $('.section').stellar({
-    hideDistantElements: false,
-    verticalOffset: 0
-  });
+    $('.section').stellar({
+      hideDistantElements: false,
+      verticalOffset: 0
+    });
+  }
+
+  $('#nav a.active').click(function() {
+    $('.section').animate({scrollTop : 0}, 1200);
+  })
 
   $(window).load(function() {
 

@@ -111,26 +111,10 @@
 
 #nav {
   opacity: 0;
-  -webkit-transition-property: background-color, opacity;
-     -moz-transition-property: background-color, opacity;
-       -o-transition-property: background-color, opacity;
-          transition-property: background-color, opacity;
-  -webkit-transition-duration: .35s;
-     -moz-transition-duration: .35s;
-       -o-transition-duration: .35s;
-          transition-duration: .35s;
 }
 
 #nav #symbol,
 #nav ul {
-  -webkit-transition-property: opacity;
-     -moz-transition-property: opacity;
-       -o-transition-property: opacity;
-          transition-property: opacity;
-  -webkit-transition-duration: .35s;
-     -moz-transition-duration: .35s;
-       -o-transition-duration: .35s;
-          transition-duration: .35s;
 }
 
 /* Once the page is ready. */
@@ -138,5 +122,24 @@
 body.ready {
   #nav {
     opacity: 1;
+    -webkit-transition-property: background-color, opacity;
+       -moz-transition-property: background-color, opacity;
+         -o-transition-property: background-color, opacity;
+            transition-property: background-color, opacity;
+    -webkit-transition-duration: .35s;
+       -moz-transition-duration: .35s;
+         -o-transition-duration: .35s;
+            transition-duration: .35s;
+    ul {
+      -webkit-transition-property: opacity;
+         -moz-transition-property: opacity;
+           -o-transition-property: opacity;
+              transition-property: opacity;
+      -webkit-transition-duration: .35s;
+         -moz-transition-duration: .35s;
+           -o-transition-duration: .35s;
+              transition-duration: .35s;
+
+    }
   }
 }
