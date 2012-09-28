@@ -122,7 +122,7 @@ function pages(element) {
  */
 function cover(element) {
 
-  console.log('cover');
+  console.log('Initialized "cover".');
 
   el = $(element);
 
@@ -155,7 +155,7 @@ function cover(element) {
 
   function resize() {
 
-    console.log('cover.resize');
+    console.log('Initialized "cover.resize".');
 
     // Redefine variables.
     var windowWidth = $(window).width();
@@ -192,7 +192,7 @@ function cover(element) {
 
   function swap() {
 
-    console.log('cover.swap');
+    console.log('Initialized "cover.swap".');
 
     var first = el.find('img:first-child');
     console.log(first);
@@ -276,8 +276,11 @@ function dropdowns(element) {
  */
 $(document).ready(function() {
 
+  console.log('Document ready.');
+
   // Call modules.
   pages('.section');
+
   dropdowns('#stores > ul');
 
   $('body').stickySectionHeaders({
@@ -291,8 +294,12 @@ $(document).ready(function() {
   });
 
   $(window).load(function() {
+
+    console.log('Document loaded.');
+
     // Add class ready to the body.
     $('body').addClass('ready');
+
     cover('#home .cover');
 
   });

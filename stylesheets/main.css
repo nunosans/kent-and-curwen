@@ -369,7 +369,12 @@ body.ready #nav {
   background-color: #000; }
 
 #home .cover img {
-  opacity: 0;
+  opacity: 0; }
+
+#home .cover img.active {
+  opacity: 1; }
+
+body.ready #home .cover img {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
@@ -382,9 +387,6 @@ body.ready #nav {
   -moz-transition-delay: 1s;
   -o-transition-delay: 1s;
   transition-delay: 1s; }
-
-#home .cover img.active {
-  opacity: 1; }
 
 /* Page header with the brand name on the home page */
 #header {
