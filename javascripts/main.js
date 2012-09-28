@@ -262,27 +262,24 @@ function dropdowns(element) {
  */
 $(document).ready(function() {
 
-  // Rewrite the appropriate images path.
-  // resolute();
+  // Call modules.
+  cover('#home .cover');
+  pages('.section');
+  dropdowns('#stores > ul');
+
+  $('body').stickySectionHeaders({
+    stickyClass: 'sticky',
+    headlineSelector: '.text'
+  });
+
+  $('.section').stellar({
+    hideDistantElements: false,
+    verticalOffset: 0
+  });
 
   $(window).load(function() {
     // Add class ready to the body.
     $('body').addClass('ready');
-
-    // Call modules.
-    cover('#home .cover');
-    pages('.section');
-    dropdowns('#stores > ul');
-
-    $('body').stickySectionHeaders({
-      stickyClass: 'sticky',
-      headlineSelector: '.text'
-    });
-
-    $('.section').stellar({
-      hideDistantElements: false,
-      verticalOffset: 0
-    });
 
   });
 
