@@ -262,7 +262,7 @@ html body {
   z-index: 10;
   font-weight: 900; }
   #nav #symbol {
-    background: url(../graphics/sprite-logotype.png) 0px 0px no-repeat;
+    background: url(../media/sprite-logotype.png) 0px 0px no-repeat;
     background-size: 772px 150px;
     color: transparent;
     display: inline-block;
@@ -418,7 +418,7 @@ body.ready #nav {
 
 /* First Character (K) */
 #header h1 > *:nth-child(1) {
-  background: url(../graphics/sprite-logotype.png) -350px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -350px 0px no-repeat;
   margin: 0 0 0 7px;
   width: 75px;
   -webkit-transform: translateX(-37px);
@@ -432,7 +432,7 @@ body.ready #nav {
 
 /* Second Character (E) */
 #header h1 > *:nth-child(2) {
-  background: url(../graphics/sprite-logotype.png) -216px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -216px 0px no-repeat;
   margin: 0 7px;
   width: 64px;
   -webkit-transform: translateX(-31px);
@@ -446,7 +446,7 @@ body.ready #nav {
 
 /* Third Character (N) */
 #header h1 > *:nth-child(3) {
-  background: url(../graphics/sprite-logotype.png) -426px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -426px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
   -webkit-transform: translateX(-21px);
@@ -460,7 +460,7 @@ body.ready #nav {
 
 /* Fourth Character (T) */
 #header h1 > *:nth-child(4) {
-  background: url(../graphics/sprite-logotype.png) -281px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -281px 0px no-repeat;
   margin: 0 4px;
   width: 68px;
   -webkit-transform: translateX(-17px);
@@ -474,7 +474,7 @@ body.ready #nav {
 
 /* Fifth Character (Ampersand) */
 #header h1 > *:nth-child(5) {
-  background: url(../graphics/sprite-logotype.png) -76px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -76px 0px no-repeat;
   margin: 0 40px 0 44px;
   width: 72px;
   -webkit-transform: translateX(-10px);
@@ -488,7 +488,7 @@ body.ready #nav {
 
 /* Sixth Character (C) */
 #header h1 > *:nth-child(6) {
-  background: url(../graphics/sprite-logotype.png) -149px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -149px 0px no-repeat;
   margin: 0 5px 0 6px;
   width: 66px;
   -webkit-transform: translateX(2px);
@@ -502,7 +502,7 @@ body.ready #nav {
 
 /* Seventh Character (U) */
 #header h1 > *:nth-child(7) {
-  background: url(../graphics/sprite-logotype.png) -582px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -582px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
   -webkit-transform: translateX(10px);
@@ -516,7 +516,7 @@ body.ready #nav {
 
 /* Eighth Character (R) */
 #header h1 > *:nth-child(8) {
-  background: url(../graphics/sprite-logotype.png) -506px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -506px 0px no-repeat;
   margin: 0 0 0 4px;
   width: 75px;
   -webkit-transform: translateX(19px);
@@ -530,7 +530,7 @@ body.ready #nav {
 
 /* Ninth Character (W) */
 #header h1 > *:nth-child(9) {
-  background: url(../graphics/sprite-logotype.png) -662px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -662px 0px no-repeat;
   margin: 0;
   width: 110px;
   -webkit-transform: translateX(28px);
@@ -544,7 +544,7 @@ body.ready #nav {
 
 /* Tenth Character (E) */
 #header h1 > *:nth-child(10) {
-  background: url(../graphics/sprite-logotype.png) -216px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -216px 0px no-repeat;
   margin: 0 7px;
   width: 64px;
   -webkit-transform: translateX(38px);
@@ -558,7 +558,7 @@ body.ready #nav {
 
 /* Eleventh Character (N) */
 #header h1 > *:nth-child(11) {
-  background: url(../graphics/sprite-logotype.png) -426px 0px no-repeat;
+  background: url(../media/sprite-logotype.png) -426px 0px no-repeat;
   margin: 0 7px;
   width: 79px;
   -webkit-transform: translateX(46px);
