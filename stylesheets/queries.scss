@@ -12,18 +12,38 @@
 
 @media only screen and (max-width: 750px) {
 
-  #header {
-    zoom: 45%;
-  }
+
   #nav {
+    zoom: 50%;
     ul {
-      top: 70px;
+      top: 25px;
       li {
-        margin-bottom: 5px;
+        height: 20px;
+        margin-bottom: 20px;
         display: block;
         text-align: right;
       }
     }
+  }
+
+  #header {
+    zoom: 40%;
+  }
+
+  .section > * {
+    zoom: 50%;
+    p {
+      zoom: 200%;
+    }
+  }
+
+  #collections > *:first-child img,
+  #stores > *:first-child img {
+    width: 200%;
+  }
+
+  #home > * {
+    zoom: 100%;
   }
 
 }
@@ -33,7 +53,41 @@
 @media only screen and (max-width: 375px) {
 
   #header {
-    zoom: 30%;
+    zoom: 25%;
   }
 
 }
+
+@media only screen and (max-width: 750px) and (orientation: landscape) {
+
+  #header {
+    top: 66%;
+  }
+}
+
+
+// Mobile specific.
+
+body.mobile {
+
+  #nav {
+    background-color: rgba(0,0,0,.5) !important;
+    #symbol,
+    ul {
+      opacity: 1;
+    }
+  }
+
+  #home #nav {
+    background-color: rgba(0,0,0,0) !important;
+  }
+
+}
+
+// Desktop specific.
+
+body.desktop {
+
+}
+
+

@@ -285,18 +285,20 @@ $(document).ready(function() {
   dropdowns('#stores > ul');
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    // Mobile specific actions.
+    $('body').addClass('mobile');
   } else {
-    $('body').stickySectionHeaders({
-      stickyClass: 'sticky',
-      headlineSelector: '.text'
-    });
+    $('body').addClass('desktop');
+  };
 
-    $('.section').stellar({
-      hideDistantElements: false,
-      verticalOffset: 0
-    });
-  }
+  $('body.desktop').stickySectionHeaders({
+    stickyClass: 'sticky',
+    headlineSelector: '.text'
+  });
+
+  $('body.desktop .parallax').stellar({
+    hideDistantElements: false,
+    verticalOffset: 0
+  });
 
   $('#nav a.active').click(function() {
     $('.section').animate({scrollTop : 0}, 1200);
