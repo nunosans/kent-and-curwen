@@ -282,7 +282,7 @@ $(document).ready(function() {
   // Call modules.
   pages('.section');
 
-  dropdowns('#stores .section > ul');
+  dropdowns('#stores > ul');
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $('body').addClass('mobile');
@@ -312,7 +312,9 @@ $(document).ready(function() {
     $('body').addClass('ready');
     $('.spinner').fadeOut(600).children().hide();
 
-    cover('#home .cover');
+    if ($('body').attr('id') == 'home') {
+      cover('.cover');
+    }
 
   });
 

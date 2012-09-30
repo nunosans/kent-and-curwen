@@ -1,14 +1,17 @@
-#stores .section {
+#stores {
+
+  overflow: visible;
+  background-color: #fff;
 
   * {
-    overflow: hidden;
+    // overflow: hidden;
   }
 
   > div {
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 
     h1 {
       position: absolute;
@@ -34,6 +37,7 @@
   ul {
     list-style-type: none;
     li {
+      overflow: hidden;
       font-weight: 400;
       margin-bottom: 20px;
       min-height: 50px;
@@ -102,4 +106,9 @@
 
 li.closed {
   height: 40px !important;
+}
+
+#stores #nav {
+  position: absolute;
+  height: 200px;
 }
