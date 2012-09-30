@@ -310,6 +310,7 @@ $(document).ready(function() {
 
     // Add class ready to the body.
     $('body').addClass('ready');
+    $('.spinner').fadeOut(600).children().hide();
 
     cover('#home .cover');
 

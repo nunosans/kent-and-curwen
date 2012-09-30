@@ -1,24 +1,43 @@
 /* Transition animations. */
 
 #home {
-  background-color: #000;
+
+  #nav {
+    opacity: 0;
+  }
+
+  .section {
+    background-color: #111;
+  }
+
+  .cover {
+    img {
+      opacity: 0;
+    }
+    img.active {
+      opacity: 1;
+    }
+  }
 }
 
-#home .cover img {
-  opacity: 0;
-}
+#home.ready {
 
-#home .cover img.active {
-  opacity: 1;
-}
+  #nav {
+    opacity: 1;
+    -webkit-transition-duration: 3.75s;
+       -moz-transition-duration: 3.75s;
+         -o-transition-duration: 3.75s;
+            transition-duration: 3.75s;
+  }
 
-body.ready #home .cover img {
-  -webkit-transition-property: opacity;
-     -moz-transition-property: opacity;
-       -o-transition-property: opacity;
-          transition-property: opacity;
-  -webkit-transition-duration: 3.75s;
-     -moz-transition-duration: 3.75s;
-       -o-transition-duration: 3.75s;
-          transition-duration: 3.75s;
+  .cover img {
+    -webkit-transition-property: opacity;
+       -moz-transition-property: opacity;
+         -o-transition-property: opacity;
+            transition-property: opacity;
+    -webkit-transition-duration: 3.75s;
+       -moz-transition-duration: 3.75s;
+         -o-transition-duration: 3.75s;
+            transition-duration: 3.75s;
+  }
 }
