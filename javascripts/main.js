@@ -282,7 +282,7 @@ $(document).ready(function() {
   // Call modules.
   pages('.section');
 
-  dropdowns('#stores > ul');
+  dropdowns('#stores .section > ul');
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $('body').addClass('mobile');
