@@ -1859,7 +1859,13 @@ li.closed {
   .section > * {
     zoom: 50%; }
     .section > * p {
-      zoom: 200%; }
+      line-height: 20px;
+      margin-top: -200px; }
+    .section > * h1 {
+      margin-top: -80px; }
+
+  #heritage .section > :nth-child(14) > :nth-child(2) {
+    margin-top: -300px; }
 
   #collections > *:first-child img,
   #stores > *:first-child img {
