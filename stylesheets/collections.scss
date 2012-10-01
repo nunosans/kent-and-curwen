@@ -151,7 +151,11 @@
 
 }
 
-
+#collections.mobile .section {
+  > * {
+    padding-bottom: 200px;
+  }
+}
 
 
 
