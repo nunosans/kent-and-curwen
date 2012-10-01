@@ -51,8 +51,11 @@
     width: 200%;
   }
 
-  #home > * {
+  #home .section > * {
     zoom: 100%;
+  }
+  #home #header {
+    zoom: 40%;
   }
 
 }
@@ -61,7 +64,7 @@
 
 @media only screen and (max-width: 375px) {
 
-  #header {
+  #home #header {
     zoom: 25%;
   }
 
