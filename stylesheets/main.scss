@@ -141,8 +141,9 @@ html {
     font-size: 0;
     width: 60px;
     height: 60px;
-    background-image: url(../media/spinner.gif);
+    background-image: url(../media/graphic-spinner.gif);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 60px 60px !important;
     position: fixed;
     top: 50%;
