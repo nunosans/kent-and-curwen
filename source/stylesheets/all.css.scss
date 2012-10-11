@@ -1,0 +1,21 @@
+/* Copyright 2012 Savant. All Rights Reserved. */
+
+/*
+ * @fileoverview Kent & Curwen cover stylesheet.
+ * @author nuno@savantstudio.co.uk (Nuno Coelho Santos).
+ */
+
+// Components.
+@import "main.scss";
+@import "nav.scss";
+
+// Sections.
+@import "home.scss";
+@import "home.header.scss";
+@import "collections.scss";
+@import "heritage.scss";
+@import "news.scss";
+@import "stores.scss";
+
+// Media Queries.
+@import "queries.scss";

@@ -1,3 +1,5 @@
+//= require_tree .
+
 // Copyright 2012 Savant. All Rights Reserved.
 
 /**
