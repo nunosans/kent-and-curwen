@@ -3,7 +3,7 @@ body.collections .section {
   > *:nth-child(1)  {
     overflow: hidden;
     > *:nth-child(1) {top: 300px;}
-    > *:nth-child(2) {}
+    > *:nth-child(2) { }
   }
 
   > *:nth-child(2)  {
@@ -15,11 +15,11 @@ body.collections .section {
 
   > *:nth-child(3)  {
     height: 90%;
-    > *:nth-child(1) {}
+    > *:nth-child(1) { }
     > *:nth-child(2) {top: 120px;}
   }
 
-  > *:nth-child(4)  {}
+  > *:nth-child(4)  { }
 
   > *:nth-child(5)  {
     height: 85%;
@@ -51,8 +51,8 @@ body.collections .section {
   }
 
   > *:nth-child(10) {
-    height: 90%;
     z-index: 2;
+    height: 90%;
   }
 
   > *:nth-child(11) {
@@ -69,7 +69,7 @@ body.collections .section {
     > *:nth-child(3) {top: 230px;}
   }
 
-  > *:nth-child(13) {}
+  > *:nth-child(13) { }
 
   > *:nth-child(14) {
     height: 80%;
@@ -77,7 +77,7 @@ body.collections .section {
     > *:nth-child(2) {top: 120px;}
   }
 
-  > *:nth-child(15) {}
+  > *:nth-child(15) { }
 
   > *:nth-child(16) {
     height: 70%;
@@ -95,59 +95,59 @@ body.collections .section {
     > *:nth-child(4) {top: 160px;}
   }
 
-  > *:nth-child(18) {}
+  > *:nth-child(18) { }
 
-  > *:nth-child(19) {}
+  > *:nth-child(19) { }
 
-  > *:nth-child(20) {}
+  > *:nth-child(20) { }
 
-  > *:nth-child(21) {}
+  > *:nth-child(21) { }
 
-  > *:nth-child(22) {}
+  > *:nth-child(22) { }
 
-  > *:nth-child(23) {}
+  > *:nth-child(23) { }
 
-  > *:nth-child(24) {}
+  > *:nth-child(24) { }
 
-  > *:nth-child(25) {}
+  > *:nth-child(25) { }
 
-  > *:nth-child(26) {}
+  > *:nth-child(26) { }
 
-  > *:nth-child(27) {}
+  > *:nth-child(27) { }
 
-  > *:nth-child(28) {}
+  > *:nth-child(28) { }
 
-  > *:nth-child(29) {}
+  > *:nth-child(29) { }
 
-  > *:nth-child(30) {}
+  > *:nth-child(30) { }
 
-  > *:nth-child(31) {}
+  > *:nth-child(31) { }
 
-  > *:nth-child(32) {}
+  > *:nth-child(32) { }
 
-  > *:nth-child(33) {}
+  > *:nth-child(33) { }
 
-  > *:nth-child(34) {}
+  > *:nth-child(34) { }
 
-  > *:nth-child(35) {}
+  > *:nth-child(35) { }
 
-  > *:nth-child(36) {}
+  > *:nth-child(36) { }
 
-  > *:nth-child(37) {}
+  > *:nth-child(37) { }
 
-  > *:nth-child(38) {}
+  > *:nth-child(38) { }
 
-  > *:nth-child(39) {}
+  > *:nth-child(39) { }
 
   > *:nth-child(40) {
     height: 200%;
   }
 
-  > *:nth-child(41) {}
+  > *:nth-child(41) { }
 
-  > *:nth-child(42) {}
+  > *:nth-child(42) { }
 
-  > *:nth-child(43) {}
+  > *:nth-child(43) { }
 
 }
 

@@ -10,71 +10,71 @@ h1, h2, h3, h4, h5, h6, p,
 
 // General Styles
 html, body {
-  background-color: #111;
   position: relative;
+  background-color: #111;
 }
 .inactive {
-  pointer-events: none;
   opacity: .5;
+  pointer-events: none;
 }
 
 // Custom Typefaces
 @font-face {
-  font-family: "Filosita";
   font-style: italic;
+  font-family: "Filosita";
   src: local("Filosita"),
        url('/typefaces/filosofia.eot?#iefix') format('embedded-opentype'),
        url('/typefaces/filosofia.woff') format('woff'),
-       url('/typefaces/filosofia.ttf')  format('truetype'),
+       url('/typefaces/filosofia.ttf') format('truetype'),
        url('/typefaces/filosofia.svg#svgFontName') format('svg');
 }
 
 // Custom Typefaces
 @font-face {
-  font-family: "Brandon Grotesque";
-  font-style: normal;
   font-weight: 900;
+  font-style: normal;
+  font-family: "Brandon Grotesque";
   src: local("Brandon Grotesque"),
        url('/typefaces/brandon-grotesk.eot?#iefix') format('embedded-opentype'),
        url('/typefaces/brandon-grotesk.woff') format('woff'),
-       url('/typefaces/brandon-grotesk.ttf')  format('truetype'),
+       url('/typefaces/brandon-grotesk.ttf') format('truetype'),
        url('/typefaces/brandon-grotesk.svg#svgFontName') format('svg');
 }
 
 html {
   body {
+    position: absolute;
+    top: 0;
+    left: 0;
     overflow: hidden;
-    font-family: "Filosita", serif;
     text-transform: none;
     letter-spacing: 1px;
     font-style: italic;
-    position: absolute;
-    left: 0;
-    top: 0;
     font-size: 17px;
+    font-family: "Filosita", serif;
     line-height: 21px;
     h1, h2, h3, h4, h5, h6 {
-      font-family: "Brandon Grotesque", Helvetica, sans-serif;
-      font-style: normal;
-      font-weight: 900;
       text-transform: uppercase;
+      font-weight: 900;
+      font-style: normal;
+      font-family: "Brandon Grotesque", Helvetica, sans-serif;
       -webkit-font-smoothing: antialiased;
          -moz-font-smoothing: antialiased;
            -o-font-smoothing: antialiased;
               font-smoothing: antialiased;
     }
     h1 {
+      word-spacing: 16px;
+      letter-spacing: 8px;
       font-size: 48px;
       line-height: 72px;
-      letter-spacing: 8px;
-      word-spacing: 16px;
       i {
         // display: inline-block;
         // margin-top: 80px;
-        font-family: "Filosita", serif;
         text-transform: none;
         letter-spacing: 2px;
         font-weight: 400;
+        font-family: "Filosita", serif;
         -webkit-font-smoothing: subpixel-antialiased;
            -moz-font-smoothing: subpixel-antialiased;
              -o-font-smoothing: subpixel-antialiased;
@@ -82,18 +82,18 @@ html {
       }
     }
     h2 {
+      word-spacing: 12px;
+      letter-spacing: 5px;
       font-size: 34px;
       line-height: 51px;
-      letter-spacing: 5px;
-      word-spacing: 12px;
     }
     p {
-      width: 440px;
       margin: 20px 0;
+      width: 440px;
     }
     i, b, strong, em {
-      font-style: italic;
       font-weight: normal;
+      font-style: italic;
     }
     a,
     a:link,
@@ -101,26 +101,26 @@ html {
     a:hover,
     a:active,
     a:focus {
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: transparent;
       color: #111;
       text-decoration: none;
-      -webkit-transition-property: border-bottom-color;
-         -moz-transition-property: border-bottom-color;
-           -o-transition-property: border-bottom-color;
-              transition-property: border-bottom-color;
       -webkit-transition-duration: 0.15s;
          -moz-transition-duration: 0.15s;
            -o-transition-duration: 0.15s;
               transition-duration: 0.15s;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-      border-bottom-color: transparent;
+      -webkit-transition-property: border-bottom-color;
+         -moz-transition-property: border-bottom-color;
+           -o-transition-property: border-bottom-color;
+              transition-property: border-bottom-color;
     }
     a:hover,
     a:active,
     a.active,
     a:focus {
-      cursor: pointer;
       border-bottom-color: #111;
+      cursor: pointer;
     }
   }
 }
@@ -132,62 +132,62 @@ html {
   height: 100%;
   background-color: #000110;
   h6 {
-    color: transparent;
-    font-size: 0;
-    width: 60px;
-    height: 60px;
-    background-image: url(../media/graphic-spinner.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 60px 60px !important;
     position: fixed;
     top: 50%;
     left: 50%;
     margin: 0 0 0 -30px;
+    width: 60px;
+    height: 60px;
+    background-image: url(../media/graphic-spinner.gif);
+    background-position: center;
+    background-size: 60px 60px !important;
+    background-repeat: no-repeat;
+    color: transparent;
+    font-size: 0;
   }
 }
 
 .section {
-  background-color: #fff;
+  position: relative;
   display: block;
   float: left;
-  height: auto;
-  overflow-y: scroll;
   overflow-x: hidden;
-  position: relative;
+  overflow-y: scroll;
   width: 100%;
+  height: auto;
+  background-color: #fff;
   // Add native style momentum to scrolling.
   -webkit-overflow-scrolling: touch;
 }
 
 .parallax {
   > * {
+    position: relative;
     display: block;
     width: 100%;
     height: 100%;
-    position: relative;
     > * {
-      height: auto;
-      display: inline-block;
       position: absolute;
       top: 0;
       left: 0;
+      display: inline-block;
+      height: auto;
     }
   }
   h1 {
+    left: 0 !important;
+    z-index: 2;
+    width: 100%;
     color: white;
     text-align: center;
-    width: 100%;
-    z-index: 2;
-    left: 0 !important;
-    -webkit-transition-property: opacity;
-       -moz-transition-property: opacity;
-         -o-transition-property: opacity;
-            transition-property: opacity;
     -webkit-transition-duration: 0.15s;
        -moz-transition-duration: 0.15s;
          -o-transition-duration: 0.15s;
             transition-duration: 0.15s;
+    -webkit-transition-property: opacity;
+       -moz-transition-property: opacity;
+         -o-transition-property: opacity;
+            transition-property: opacity;
   }
   img {
     padding: 0;

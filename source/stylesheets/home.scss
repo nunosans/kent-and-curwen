@@ -31,14 +31,14 @@ body.index.ready {
   }
 
   .cover img {
-    -webkit-transition-property: opacity;
-       -moz-transition-property: opacity;
-         -o-transition-property: opacity;
-            transition-property: opacity;
     -webkit-transition-duration: 3.75s;
        -moz-transition-duration: 3.75s;
          -o-transition-duration: 3.75s;
             transition-duration: 3.75s;
+    -webkit-transition-property: opacity;
+       -moz-transition-property: opacity;
+         -o-transition-property: opacity;
+            transition-property: opacity;
   }
 }
 

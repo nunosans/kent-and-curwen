@@ -8,17 +8,17 @@ body.stores {
   }
 
   > div {
-    width: 100%;
-    height: 100%;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 
     h1 {
       position: absolute;
       top: 300px;
       width: 100%;
-      text-align: center;
       color: #fff;
+      text-align: center;
     }
     img {
       width: 100%;
@@ -27,8 +27,8 @@ body.stores {
   }
 
   > ul {
-    width: 90%;
     margin: 160px 5%;
+    width: 90%;
     > li {
       width: 100%;
     }
@@ -38,21 +38,21 @@ body.stores {
     list-style-type: none;
     li {
       overflow: hidden;
-      font-weight: 400;
       margin-bottom: 20px;
       min-height: 50px;
-      -webkit-transition-property: height;
-         -moz-transition-property: height;
-           -o-transition-property: height;
-              transition-property: height;
+      font-weight: 400;
       -webkit-transition-duration: 0.75s;
          -moz-transition-duration: 0.75s;
            -o-transition-duration: 0.75s;
               transition-duration: 0.75s;
+      -webkit-transition-property: height;
+         -moz-transition-property: height;
+           -o-transition-property: height;
+              transition-property: height;
     }
     i {
-      font-family: "Filosita", serif;
       font-style: italic;
+      font-family: "Filosita", serif;
       -webkit-font-smoothing: subpixel-antialiased;
          -moz-font-smoothing: subpixel-antialiased;
            -o-font-smoothing: subpixel-antialiased;
@@ -61,25 +61,25 @@ body.stores {
     h3,
     h4 {
       clear: both;
-      -webkit-transition-property: color;
-         -moz-transition-property: color;
-           -o-transition-property: color;
-              transition-property: color;
       -webkit-transition-duration: 0.25s;
          -moz-transition-duration: 0.25s;
            -o-transition-duration: 0.25s;
               transition-duration: 0.25s;
+      -webkit-transition-property: color;
+         -moz-transition-property: color;
+           -o-transition-property: color;
+              transition-property: color;
     }
     h3:hover,
     h4:hover {
-      cursor: pointer;
       color: #666;
+      cursor: pointer;
     }
     h3,
     h4,
     h5 {
-      font-weight: 900;
       margin: 0 0 30px 0;
+      font-weight: 900;
     }
   }
 }
@@ -92,12 +92,12 @@ body.stores {
      -moz-column-gap:40px;
           column-gap:40px;
   li {
-    font-family: "Brandon Grotesque", Helvetica, sans-serif;
-    font-style: normal;
+    display: inline-block;
     font-weight: normal;
     font-weight: light;
+    font-style: normal;
     font-size: .9em;
-    display: inline-block;
+    font-family: "Brandon Grotesque", Helvetica, sans-serif;
     h5 {
       font-size: 1em;
     }
