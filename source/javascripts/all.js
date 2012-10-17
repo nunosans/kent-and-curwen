@@ -5,12 +5,12 @@
  */
 $(document).ready(function() {
 
-  console.log('Document ready.');
+  // console.log('Document ready.');
 
   // Call modules.
-  pages('.section');
+  pages('div.section');
 
-  dropdowns('#stores > ul');
+  dropdowns('body.stores > ul');
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $('body').addClass('mobile');
@@ -18,7 +18,7 @@ $(document).ready(function() {
     $('body').addClass('desktop');
   };
 
-  $('body.desktop').stickySectionHeaders({
+  $('body.news').stickySectionHeaders({
     stickyClass: 'sticky',
     headlineSelector: '.text'
   });
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
   $(window).load(function() {
 
-    console.log('Document loaded.');
+    // console.log('Document loaded.');
 
     // Add class ready to the body.
     $('body').addClass('ready');

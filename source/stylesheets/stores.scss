@@ -1,4 +1,4 @@
-#stores {
+body.stores {
 
   overflow: visible;
   background-color: #fff;
@@ -108,7 +108,7 @@ li.closed {
   height: 40px !important;
 }
 
-#stores #nav {
+body.stores #nav {
   position: absolute;
   height: 200px;
 }

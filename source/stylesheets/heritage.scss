@@ -1,4 +1,4 @@
-#heritage .section {
+body.heritage .section {
 
   > *:nth-child(1) {
     height: 150%;
@@ -153,7 +153,7 @@
 
 }
 
-#heritage.mobile .section {
+body.heritage.mobile .section {
   > * {
     padding-bottom: 200px;
   }
