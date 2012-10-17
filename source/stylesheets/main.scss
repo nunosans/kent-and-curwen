@@ -15,6 +15,7 @@ html, body {
 }
 .inactive {
   opacity: .5;
+  filter: alpha(opacity = 50);
   pointer-events: none;
 }
 
