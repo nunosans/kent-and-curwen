@@ -1,6 +1,6 @@
 /* Transition animations. */
 
-#home {
+body.index {
 
   #nav {
     opacity: 0;
@@ -20,7 +20,7 @@
   }
 }
 
-#home.ready {
+body.index.ready {
 
   #nav {
     opacity: 1;
@@ -42,7 +42,7 @@
   }
 }
 
-#home.mobile {
+body.index.mobile {
 
   #nav {
     background-color: rgba(0,0,0,0);
