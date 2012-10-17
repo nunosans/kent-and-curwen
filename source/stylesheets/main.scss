@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 
 // Browser Reset
@@ -24,9 +23,10 @@ html, body {
   font-family: "Filosita";
   font-style: italic;
   src: local("Filosita"),
-  url("/typefaces/filosita.eot") format("embedded-opentype"),
-  url("/typefaces/filosita.eot?#iefix") format("embedded-opentype"),
-  url("/typefaces/filosita.woff") format("woff");
+       url('/typefaces/filosofia.eot?#iefix') format('embedded-opentype'),
+       url('/typefaces/filosofia.woff') format('woff'),
+       url('/typefaces/filosofia.ttf')  format('truetype'),
+       url('/typefaces/filosofia.svg#svgFontName') format('svg');
 }
 
 // Custom Typefaces
@@ -35,9 +35,10 @@ html, body {
   font-style: normal;
   font-weight: 900;
   src: local("Brandon Grotesque"),
-  url("/typefaces/brandon-grotesque.eot") format("embedded-opentype"),
-  url("/typefaces/brandon-grotesque.eot?#iefix") format("embedded-opentype"),
-  url("/typefaces/brandon-grotesque.woff") format("woff");
+       url('/typefaces/brandon-grotesk.eot?#iefix') format('embedded-opentype'),
+       url('/typefaces/brandon-grotesk.woff') format('woff'),
+       url('/typefaces/brandon-grotesk.ttf')  format('truetype'),
+       url('/typefaces/brandon-grotesk.svg#svgFontName') format('svg');
 }
 
 html {
