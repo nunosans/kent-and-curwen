@@ -1,6 +1,6 @@
 /* Transition animations. */
 
-body.index {
+body.cover {
 
   #nav {
     opacity: 0;
@@ -23,7 +23,7 @@ body.index {
   }
 }
 
-body.index.ready {
+body.cover.ready {
 
   #nav {
     opacity: 1;
@@ -46,7 +46,7 @@ body.index.ready {
   }
 }
 
-body.index.mobile {
+body.cover.mobile {
 
   #nav {
     background: transparent url('/media/px-transparent.png') 0 0 repeat;
