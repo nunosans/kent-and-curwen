@@ -3,8 +3,6 @@
  */
 function cover(element) {
 
-  console.log('Initialized "cover".');
-
   el = $(element);
 
   // Define this object's elements.
@@ -35,8 +33,6 @@ function cover(element) {
   });
 
   function resize() {
-
-    console.log('Initialized "cover.resize".');
 
     // Redefine variables.
     var windowWidth = $(window).width();
@@ -73,24 +69,16 @@ function cover(element) {
 
   function swap() {
 
-    console.log('Initialized "cover.swap".');
-
     var first = el.find('img:first-child');
-    console.log(first);
 
     first.addClass('active');
 
     setInterval(function() {
 
-      console.log('swapping images');
-
       var active = el.find('img.active');
-      console.log(active);
       var next = active.next();
-      console.log(next);
 
       if (!active.next().length) {
-        console.log('loop');
         next = first;
       };
 
@@ -99,8 +87,6 @@ function cover(element) {
 
       // Make the next image active.
       next.addClass('active');
-
-      console.log('done');
 
     },
     7000);

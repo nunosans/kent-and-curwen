@@ -41,7 +41,7 @@ $(document).ready(function() {
     $('.spinner').fadeOut(600).children().hide();
 
     // Call the cover module if this is the landing page.
-    if ($('body').hasClass('index')) {
+    if ($('body').hasClass('cover')) {
       cover('.cover');
     }
 
