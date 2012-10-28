@@ -1,16 +1,16 @@
 /* Average screen size */
 @media only screen and (max-width: 1125px) {
   #header {
-    zoom: 65%;
+    zoom: 0.65;
   }
 }
 
 /* Small-sized screens */
 @media only screen and (max-width: 750px) {
   #nav {
-    zoom: 50%;
+    // zoom: 50%;
     ul {
-      top: 25px;
+      top: 37px;
       li {
         display: block;
         margin-bottom: 20px;
@@ -20,7 +20,7 @@
     }
   }
   #header {
-    zoom: 40%;
+    zoom: 0.35;
   }
   .section > * {
     zoom: 50%;
@@ -40,23 +40,25 @@
   body.stores > *:first-child img {
     width: 200%;
   }
-  body.index .section > * {
-    zoom: 100%;
-  }
-  body.index #header {
-    zoom: 40%;
-  }
 }
 
 /* Phone-sized screens */
 @media only screen and (max-width: 375px) {
-  body.home #header {
-    zoom: 25%;
+  #nav {
+    zoom: 0.65;
+  }
+  #header {
+    zoom: 0.25;
   }
 }
+
 @media only screen and (max-width: 750px) and (orientation: landscape) {
+  #nav {
+    zoom: 0.65;
+  }
   #header {
-    top: 66%;
+    zoom: 0.25;
+    top: 70%;
   }
 }
 

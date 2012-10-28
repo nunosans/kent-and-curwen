@@ -12,11 +12,8 @@ h1, h2, h3, h4, h5, h6, p,
 html, body {
   position: relative;
   background-color: #111;
-}
-.inactive {
-  opacity: .5;
-  filter: alpha(opacity = 50);
-  pointer-events: none;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 // Custom Typefaces
@@ -47,6 +44,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    margin: 0;
     overflow: hidden;
     text-transform: none;
     letter-spacing: 1px;

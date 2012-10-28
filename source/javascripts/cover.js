@@ -16,21 +16,21 @@ function cover(element) {
   var imagesRatio = imagesHeight / imagesWidth;
 
   // Required styles.
-  body.css({
-    'margin': 0,
-    'overflow': 'hidden'
-  });
-  container.css({
-    'left': 0,
-    'overflow': 'hidden',
-    'position': 'absolute',
-    'top': 0
-  });
-  images.css({
-    'left': 0,
-    'position': 'absolute',
-    'top': 0
-  });
+  // body.css({
+  //   'margin': 0,
+  //   'overflow': 'hidden'
+  // });
+  // container.css({
+  //   'left': 0,
+  //   'overflow': 'hidden',
+  //   'position': 'absolute',
+  //   'top': 0
+  // });
+  // images.css({
+  //   'left': 0,
+  //   'position': 'absolute',
+  //   'top': 0
+  // });
 
   function resize() {
 
