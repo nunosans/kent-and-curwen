@@ -45,9 +45,7 @@ $(document).ready(function() {
       cover('.cover');
       // $('#nav').fadeIn(4000);
     } else {
-      $('.spinner').fadeOut(600, function() {
-        $(this).children().hide()
-      });
+      $('.spinner').children().hide().end().fadeOut(600);
     };
 
   });
