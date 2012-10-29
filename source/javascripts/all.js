@@ -28,7 +28,7 @@ $(document).ready(function() {
     verticalOffset: 0
   });
 
-  $('#nav a.active').click(function() {
+  $('#nav a.current').click(function() {
     $('.section').animate({scrollTop : 0}, 1200);
   })
 

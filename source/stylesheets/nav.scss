@@ -26,8 +26,7 @@
     // Re-enable clicks.
     // pointer-events: auto;
   }
-  #symbol:hover,
-  #symbol.active {
+  #symbol:hover {
     border-bottom-color: transparent;
   }
   a {
@@ -45,7 +44,7 @@
             transition-property: border-bottom-color;
   }
   a:hover,
-  a.active {
+  a.current {
     border-bottom-color: #fff;
     cursor: pointer;
   }
