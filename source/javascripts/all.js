@@ -5,49 +5,51 @@
  */
 $(document).ready(function() {
 
-  // console.log('Document ready.');
-
-  // Call modules.
-  pages('div.section');
-
-  dropdowns('body.stores > ul');
-
+  // Add mobile or desktop class.
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     $('body').addClass('mobile');
   } else {
     $('body').addClass('desktop');
   };
 
+  // Calculate correct height of the body.
+  $('body').height($(window).height());
+
+  // Call modules.
+  dropdowns('body.stores > ul');
+
   $('body.news').stickySectionHeaders({
     stickyClass: 'sticky',
     headlineSelector: '.text'
   });
 
-  $('body.desktop .parallax').stellar({
+  $('body.desktop').stellar({
     hideDistantElements: false,
     verticalOffset: 0
   });
 
   $('#nav a.current').click(function() {
-    $('.section').animate({scrollTop : 0}, 1200);
-  })
+    $('body').animate({scrollTop : 0}, 1200);
+  });
+
+
 
   $(window).load(function() {
 
-    // console.log('Document loaded.');
-
     // Add class ready to the body.
     $('body').addClass('ready');
-    // $('#header').fadeIn(400);
 
     // Call the cover module if this is the landing page.
     if ($('body').hasClass('cover')) {
       cover('.cover');
-      // $('#nav').fadeIn(4000);
     } else {
       $('.spinner').children().hide().end().fadeOut(600);
     };
 
+  });
+
+  $(window).resize(function() {
+    $('body').height($(window).height());
   });
 
 });
