@@ -21,7 +21,8 @@
 
 #header h1 > * {
   position: relative;
-  display: inline-block;
+  // display: inline-block;
+  display: inline;
   float: left;
   height: 80px;
   background-position: 0 0;
