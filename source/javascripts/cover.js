@@ -70,8 +70,10 @@ function cover(element) {
   function swap() {
 
     var first = el.find('img:first-child');
+    var speed = 3750;
+    var interval = 7000;
 
-    first.addClass('active');
+    first.addClass('active').fadeIn(speed);
 
     setInterval(function() {
 
@@ -83,13 +85,13 @@ function cover(element) {
       };
 
       // Deactivate current active image.
-      active.removeClass('active');
+      active.removeClass('active').fadeOut(speed);
 
       // Make the next image active.
-      next.addClass('active');
+      next.addClass('active').fadeIn(speed);
 
     },
-    7000);
+    interval);
 
   };
 

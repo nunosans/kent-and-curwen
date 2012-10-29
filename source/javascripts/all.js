@@ -38,12 +38,17 @@ $(document).ready(function() {
 
     // Add class ready to the body.
     $('body').addClass('ready');
-    $('.spinner').fadeOut(600).children().hide();
+    // $('#header').fadeIn(400);
 
     // Call the cover module if this is the landing page.
     if ($('body').hasClass('cover')) {
       cover('.cover');
-    }
+      // $('#nav').fadeIn(4000);
+    } else {
+      $('.spinner').fadeOut(600, function() {
+        $(this).children().hide()
+      });
+    };
 
   });
 
