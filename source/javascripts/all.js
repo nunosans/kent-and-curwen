@@ -76,4 +76,12 @@ $(document).ready(function() {
     }
   });
 
+  $(window).scroll(function(){
+    if (body.scrollTop() <= 50) {
+      $('#nav').addClass('top');
+    } else {
+      $('#nav').removeClass('top');
+    };
+  })
+
 });
