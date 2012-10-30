@@ -45,7 +45,7 @@ $(document).ready(function() {
   };
 
   // Scroll to top.
-  $('#nav a.current').click(function() {
+  $('#nav span.current').click(function() {
     body.animate({scrollTop : 0}, 1200);
   });
 
