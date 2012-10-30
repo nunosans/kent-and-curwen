@@ -7,7 +7,7 @@
   z-index: 10;
   width: 100%;
   height: 200px;
-  background-image: url(/media/px-overlay.png);
+  background-image: url(/media/px-transparent.png);
   background-repeat: repeat;
   font-weight: 900;
   display: block;
@@ -70,21 +70,25 @@
   }
 }
 
+#nav.top,
 #nav.hidden:hover {
   background-image: url(/media/px-overlay.png);
   background-repeat: repeat;
   opacity: 1;
 }
 
-#nav.top,
-#nav.top:hover,
-#nav.top.hidden:hover {
-  background-image: url(/media/px-transparent.png);
-  background-repeat: repeat;
-  opacity: 1;
-  #symbol,
-  ul {
+body.collection,
+body.stores {
+  #nav.top,
+  #nav.top:hover,
+  #nav.top.hidden:hover {
+    background-image: url(/media/px-transparent.png);
+    background-repeat: repeat;
     opacity: 1;
+    #symbol,
+    ul {
+      opacity: 1;
+    }
   }
 }
 
