@@ -33,9 +33,12 @@ body.parallax {
   }
 }
 
-body.parallax.mobile .section {
-  > * {
-    padding-bottom: 200px;
+body.parallax.portrait {
+  .screen.cover {
+    img {
+      width: auto;
+      height: 100%;
+    }
   }
 }
 
