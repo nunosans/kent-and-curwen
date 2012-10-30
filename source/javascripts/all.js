@@ -19,9 +19,11 @@ $(document).ready(function() {
   body.height($(window).height());
 
   // If the screen is in portrait, add class portrait.
-  if (body.height() > (body.width() * 0.71)) {
+  if (body.height() > (body.width() * 0.7)) {
     body.addClass('portrait');
-  };
+  } else {
+    body.addClass('landscape');
+  }
 
   // Call modules.
   dropdowns('body.stores > ul');
@@ -80,7 +82,9 @@ $(document).ready(function() {
     // Check if the screen is now in portrait.
     if (body.height() > (body.width() * 0.71)) {
       body.addClass('portrait');
+      body.removeClass('landscape');
     } else {
+      body.addClass('landscape');
       body.removeClass('portrait');
     }
   });

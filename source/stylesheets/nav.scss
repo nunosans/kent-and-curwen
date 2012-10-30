@@ -127,10 +127,13 @@
   }
 }
 
+
 body.mobile {
-  #nav {
+  #nav,
+  #nav.top,
+  #nav.top.hidden,
+  #nav.hidden {
     position: absolute;
-    top: 0;
-    background: url(../media/px-overlay.png);
+    opacity: 1;
   }
 }

@@ -1,10 +1,7 @@
-body.heritage .section {
+body.heritage {
 
-  > *:nth-child(1) {
-    overflow: hidden;
-    height: 150%;
-    > *:nth-child(1) {top: 300px;}
-    > *:nth-child(2) {
+  .cover {
+    img {
       padding: 0 10% 60%;
       width: 80%;
       background-color: #CFCABE;

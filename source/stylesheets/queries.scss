@@ -4,12 +4,21 @@
     zoom: 0.65;
     -moz-transform: scale(0.65);
   }
+  body.parallax.portrait {
+    .screen {
+      padding: 0 0 -150px 0;
+    }
+  }
+  body.parallax.landscape {
+    .screen {
+      margin: 0 0 200px 0;
+    }
+  }
 }
 
 /* Small-sized screens */
 @media only screen and (max-width: 750px) {
   #nav {
-    // zoom: 50%;
     ul {
       top: 37px;
       li {
@@ -24,28 +33,21 @@
     zoom: 0.35;
     -moz-transform: scale(0.35);
   }
-  .section > * {
-    zoom: 0.5;
-    -moz-transform: scale(0.5);
-    p {
-      margin-top: -200px;
-      line-height: 20px;
+  body.landscape {
+    #nav {
+      zoom: 0.55;
+      -moz-transform: scale(0.55);
     }
-    h1 {
-      margin-top: -80px;
+    #header {
+      zoom: 0.25;
+      -moz-transform: scale(0.25);
+      top: 70%;
     }
-  }
-  body.heritage .section > :nth-child(14) > :nth-child(2) {
-    margin-top: -300px;
-  }
-  body.collections > *:first-child img,
-  body.stores > *:first-child img {
-    width: 200%;
   }
 }
 
 /* Phone-sized screens */
-@media only screen and (max-width: 375px) {
+@media (max-width: 575px) {
   #nav {
     zoom: 0.65;
     -moz-transform: scale(0.65);
@@ -54,49 +56,47 @@
     zoom: 0.25;
     -moz-transform: scale(0.25);
   }
-}
-
-@media only screen and (max-width: 750px) and (orientation: landscape) {
-  #nav {
-    zoom: 0.65;
-    -moz-transform: scale(0.65);
-  }
-  #header {
-    zoom: 0.25;
-    -moz-transform: scale(0.25);
-    top: 70%;
-  }
-}
-
-
-// Mobile specific.
-body.mobile {
-  #nav {
-    background-color: rgba(0,0,0,.65);
-    #symbol,
-    ul {
-      opacity: 1;
-      filter: alpha(opacity = 100);
+  body.parallax,
+  body.parallax.portrait {
+    width: 100%;
+    position: static;
+    .screen,
+    .screen > * {
+      position: static;
+      float: left;
+      clear: both;
+      height: auto;
     }
-  }
-  body.news {
-    .text {
+    .screen {
+      margin: 0;
+    }
+    .screen > * {
       width: 90%;
+      margin: 3% 5%;
     }
-    .images {
+    .screen img.full {
       width: 100%;
+      margin: 3% 0;
+    }
+    .screen.cover {
+      height: 400px;
+      margin-bottom: 5%;
+      h1 {
+        position: absolute;
+        top: 130px !important; /* Important to prevent parallax */
+        font-size: 34px;
+        line-height: 41px;
+      }
+      img {
+        margin-top: 0;
+        height: 100%;
+      }
     }
   }
-}
-
-
-// Desktop specific.
-body.desktop {
-
 }
 
 // Retina Screens
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 750px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
   #symbol {
     background: url(../media/graphic-sprite-logotype-hires.png) 0px 0px no-repeat;
   }

@@ -31,10 +31,14 @@ body {
     padding: 0;
     height: auto;
   }
+  .screen.cover {
+    overflow: hidden;
+  }
 }
 
 body.parallax.portrait {
   .screen.cover {
+    margin: 0;
     img {
       width: auto;
       height: 100%;
@@ -116,9 +120,9 @@ body.parallax.portrait {
 .t320 {top: 320px;}
 
 // Elements with height based on class.
-.h70p  {height:  70% !important;}
-.h75p  {height:  75% !important;}
-.h80p  {height:  80% !important;}
-.h85p  {height:  85% !important;}
-.h90p  {height:  90% !important;}
-.h110p {height: 110% !important;}
+.screen.h70p  {height:  70%;}
+.screen.h75p  {height:  75%;}
+.screen.h80p  {height:  80%;}
+.screen.h85p  {height:  85%;}
+.screen.h90p  {height:  90%;}
+.screen.h110p {height: 110%;}
