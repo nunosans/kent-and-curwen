@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6, p,
 
 // General Styles
 html, body {
-  background-color: #FEFEFE;
+  background-color: #000110;
   min-height: 100%;
   min-width: 100%;
 }
@@ -122,6 +122,8 @@ html {
 .spinner {
   position: fixed;
   z-index: 2;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #000110;

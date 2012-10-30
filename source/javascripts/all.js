@@ -49,6 +49,15 @@ $(document).ready(function() {
     body.animate({scrollTop : 0}, 1200);
   });
 
+  $('#nav').hover(
+    function() {
+      $(this).addClass('hover');
+    },
+    function() {
+      $(this).removeClass('hover');
+    }
+  );
+
   $(window).load(function() {
 
     // Add class ready to the body.
