@@ -37,7 +37,7 @@ $(document).ready(function() {
   // Apply parallax effect.
   if (body.hasClass('desktop')) {
     body.stellar({
-      positionProperty: 'transform',
+      // positionProperty: 'transform',
       hideDistantElements: false,
       verticalOffset: 0,
       parallaxBackgrounds: false
