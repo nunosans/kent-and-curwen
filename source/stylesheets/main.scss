@@ -18,12 +18,13 @@ body {
 // Custom Typefaces
 @font-face {
   font-style: italic;
-  font-family: "Filosita";
-  src: local("Filosita"),
-       url('/typefaces/filosofia.eot?#iefix') format('embedded-opentype'),
-       url('/typefaces/filosofia.woff') format('woff'),
-       url('/typefaces/filosofia.ttf') format('truetype'),
-       url('/typefaces/filosofia.svg#svgFontName') format('svg');
+  font-family: "Filosofia";
+  src: url(/typefaces/filosofia.eot);
+  src: local("Filosofia"),
+       url(/typefaces/filosofia.eot?#iefix) format("embedded-opentype"),
+       url(/typefaces/filosofia.woff) format("woff"),
+       url(/typefaces/filosofia.ttf) format("truetype"),
+       url(/typefaces/filosofia.svg#svgFontName) format("svg");
 }
 
 // Custom Typefaces
@@ -31,11 +32,12 @@ body {
   font-weight: 900;
   font-style: normal;
   font-family: "Brandon Grotesque";
+  src: url(/typefaces/brandon-grotesque.eot);
   src: local("Brandon Grotesque"),
-       url('/typefaces/brandon-grotesk.eot?#iefix') format('embedded-opentype'),
-       url('/typefaces/brandon-grotesk.woff') format('woff'),
-       url('/typefaces/brandon-grotesk.ttf') format('truetype'),
-       url('/typefaces/brandon-grotesk.svg#svgFontName') format('svg');
+       url(/typefaces/brandon-grotesque.eot?#iefix) format("embedded-opentype"),
+       url(/typefaces/brandon-grotesque.woff) format("woff"),
+       url(/typefaces/brandon-grotesque.ttf) format("truetype"),
+       url(/typefaces/brandon-grotesque.svg#svgFontName) format("svg");
 }
 
 html {
@@ -47,7 +49,7 @@ html {
     letter-spacing: 1px;
     font-style: italic;
     font-size: 17px;
-    font-family: "Filosita", serif;
+    font-family: "Filosofia", serif;
     line-height: 21px;
     h1, h2, h3, h4, h5, h6 {
       text-transform: uppercase;
@@ -68,7 +70,7 @@ html {
         text-transform: none;
         letter-spacing: 2px;
         font-weight: 400;
-        font-family: "Filosita", serif;
+        font-family: "Filosofia", serif;
         -webkit-font-smoothing: subpixel-antialiased;
            -moz-font-smoothing: subpixel-antialiased;
              -o-font-smoothing: subpixel-antialiased;
