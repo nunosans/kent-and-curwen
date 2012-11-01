@@ -131,6 +131,13 @@
       }
     }
   }
+  body.stores {
+    .addresses {
+      > li {
+        width: 90%;
+      }
+    }
+  }
 }
 
 // Retina Screens
