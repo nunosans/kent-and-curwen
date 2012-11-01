@@ -21,17 +21,17 @@
     height: 150px;
     background: url(../media/graphic-sprite-logotype.png) 0px 0px no-repeat;
     background-size: 772px 150px !important;
-    color: transparent;
+    color: rgba(255,255,255,0);
     font-size: 0;
   }
   #symbol:hover {
-    border-bottom-color: transparent;
+    border-bottom-color: rgba(255,255,255,0);
   }
   a,
   span {
     border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: transparent;
+    border-bottom-color: rgba(255,255,255,0);
     color: #fff;
   }
   a:hover,

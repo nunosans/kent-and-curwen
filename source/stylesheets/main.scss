@@ -99,7 +99,7 @@ html {
     a:focus {
       border-bottom-width: 2px;
       border-bottom-style: solid;
-      border-bottom-color: transparent;
+      border-bottom-color: rgba(255,255,255,0);
       color: #111;
       text-decoration: none;
       -webkit-transition-duration: 0.15s;
@@ -140,7 +140,7 @@ html {
     background-position: center;
     background-size: 32px 32px !important;
     background-repeat: no-repeat;
-    color: transparent;
+    color: rgba(255,255,255,0);
     font-size: 0;
   }
 }
