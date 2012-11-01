@@ -6,12 +6,17 @@
   }
   body.parallax.portrait {
     .screen {
-      padding: 0 0 -150px 0;
+      // padding: 0 0 -150px 0;
     }
   }
   body.parallax.landscape {
     .screen {
       margin: 0 0 200px 0;
+    }
+  }
+  body.mobile {
+    .padded {
+      padding: 0 10% 10%;
     }
   }
 }
@@ -103,6 +108,10 @@
         margin-top: 0;
         height: 100%;
       }
+    }
+    .screen img.full.padded {
+      width: 80%;
+      padding: 0 10%;
     }
   }
 }
