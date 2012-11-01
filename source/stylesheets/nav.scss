@@ -25,18 +25,21 @@
     font-size: 0;
   }
   #symbol:hover {
-    border-bottom-color: rgba(255,255,255,0);
+    border-bottom: 0 solid #FFF;
+    border-bottom: 2px solid rgba(255,255,255,0);
   }
   a,
+  a:link,
+  a:visited,
+  a:active,
   span {
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255,255,255,0);
-    color: #fff;
+    border-bottom: 0 solid #FFF;
+    border-bottom: 2px solid rgba(255,255,255,0);
+    color: #FFF;
   }
   a:hover,
   span.current {
-    border-bottom-color: #fff;
+    border-bottom: 2px solid #FFF;
     cursor: pointer;
   }
   ul {
