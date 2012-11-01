@@ -102,7 +102,7 @@
       h1 {
         color: #FFF;
         position: absolute;
-        top: 0;
+        top: 0 !important; /* To prevent parallax */
       }
       img {
         margin-top: 0;
