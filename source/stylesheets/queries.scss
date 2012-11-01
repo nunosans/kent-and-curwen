@@ -137,6 +137,24 @@
         width: 90%;
       }
     }
+    .screen.cover {
+      height: 400px;
+      margin-bottom: 5%;
+      h1 {
+        font-size: 30px;
+        line-height: 36px;
+        width: 90%;
+        margin: 140px 5% 70px 5%;
+        word-spacing: 0px;
+        color: #FFF;
+        position: absolute;
+        top: 0;
+      }
+      img {
+        margin-top: 0;
+        height: 100%;
+      }
+    }
   }
 }
 
