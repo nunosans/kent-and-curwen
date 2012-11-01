@@ -53,10 +53,10 @@ $(document).ready(function() {
 
   function expandableMenus() {
     body.find('.expandable-menus').find('h3, h4').each(function() {
-      var menus = $(this).siblings('ul');
-      menus.hide();
+      var menu = $(this).siblings('ul');
+      menu.hide();
       $(this).click(function() {
-        menus.slideToggle('slow');
+        menu.slideToggle('slow');
       });
     })
   };

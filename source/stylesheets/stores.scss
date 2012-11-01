@@ -25,85 +25,90 @@ body.stores {
       height: auto;
     }
   }
-
-  ul.expandable-menus {
-    list-style-type: none;
-    margin: 70px 5% 0;
-    padding-bottom: 140px;
-    width: 90%;
-    > li {
-      width: 100%;
-    }
-    li {
-      overflow: hidden;
-      margin-bottom: 20px;
-      min-height: 50px;
-      font-weight: 400;
-      -webkit-transition-duration: 0.75s;
-         -moz-transition-duration: 0.75s;
-           -o-transition-duration: 0.75s;
-              transition-duration: 0.75s;
-      -webkit-transition-property: height;
-         -moz-transition-property: height;
-           -o-transition-property: height;
-              transition-property: height;
-    }
-    i {
-      font-style: italic;
-      font-family: "Filosofia", serif;
-      -webkit-font-smoothing: subpixel-antialiased;
-         -moz-font-smoothing: subpixel-antialiased;
-           -o-font-smoothing: subpixel-antialiased;
-              font-smoothing: subpixel-antialiased;
-    }
-    h3,
-    h4 {
-      clear: both;
-      -webkit-transition-duration: 0.25s;
-         -moz-transition-duration: 0.25s;
-           -o-transition-duration: 0.25s;
-              transition-duration: 0.25s;
-      -webkit-transition-property: color;
-         -moz-transition-property: color;
-           -o-transition-property: color;
-              transition-property: color;
-    }
-    h3:hover,
-    h4:hover {
-      color: #666;
-      cursor: pointer;
-    }
-    h3,
-    h4,
-    h5 {
-      margin: 0 0 30px 0;
-      font-weight: 900;
-    }
+  #nav {
+    position: absolute;
+    background-image: url(/media/px-transparent.png) !important;
   }
 }
 
-.addresses {
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-  -webkit-column-gap:40px;
-     -moz-column-gap:40px;
-          column-gap:40px;
+ul.expandable-menus {
+  list-style-type: none;
+  margin: 70px 3% 0 5%;
+  padding-bottom: 140px;
+  width: 92%;
+  > li {
+    width: 100%;
+  }
   li {
-    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 20px;
+    min-height: 50px;
+    font-weight: 400;
+    -webkit-transition-duration: 0.75s;
+       -moz-transition-duration: 0.75s;
+         -o-transition-duration: 0.75s;
+            transition-duration: 0.75s;
+    -webkit-transition-property: height;
+       -moz-transition-property: height;
+         -o-transition-property: height;
+            transition-property: height;
+  }
+  i {
+    font-style: italic;
+    font-family: "Filosofia", serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+       -moz-font-smoothing: subpixel-antialiased;
+         -o-font-smoothing: subpixel-antialiased;
+            font-smoothing: subpixel-antialiased;
+  }
+  h3,
+  h4 {
+    clear: both;
+    -webkit-transition-duration: 0.25s;
+       -moz-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-property: color;
+       -moz-transition-property: color;
+         -o-transition-property: color;
+            transition-property: color;
+  }
+  h3:hover,
+  h4:hover {
+    color: #666;
+    cursor: pointer;
+  }
+  h3,
+  h4,
+  h5 {
+    margin: 0 0 30px 0;
+    font-weight: 900;
+  }
+}
+
+
+.addresses {
+  li,
+  li ul li {
+    display: block;
     font-weight: normal;
     font-weight: light;
     font-style: normal;
-    font-size: .9em;
+    font-size: 15px;
     font-family: "Brandon Grotesque", Helvetica, sans-serif;
     h5 {
       font-size: 1em;
     }
   }
+  > li {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+  }
 }
 
 li.closed {
-  height: 40px !important;
+  height: 50px !important;
 }
 
 body.stores.portrait {
