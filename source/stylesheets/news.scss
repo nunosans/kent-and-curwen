@@ -1,11 +1,5 @@
 body.news {
-  position: relative;
   padding-top: 200px;
-  > div {
-    float: left;
-    margin-bottom: 160px;
-    width: 100%;
-  }
   .text {
     float: left;
     margin-top: 50px;
@@ -18,32 +12,28 @@ body.news {
   }
   .images {
     float: right;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin: 50px 2px 100px;
     width: 65%;
-    .col {
-      float: left;
-      width: 33.3%;
-      border-top: 3px solid #fff;
-      img {
-        width: 99%;
-        border-bottom: 3px solid #fff;
-      }
-    }
-    .col:last-child {
-      float: right;
-      img {
-        width: 100%;
-      }
-    }
     img {
-      float: left;
-      width: 100%;
+      float: right;
+      width: 99%;
       height: auto;
+      margin: 2px;
+    }
+    .col {
+      float: right;
+      width: 32%;
+      margin: 0 2px;
+      img {
+        float: right;
+        width: 100%;
+        margin: 2px 0;
+      }
     }
   }
 }
 .article {
+  float: left;
   ul {
     list-style-type: none;
     li {
@@ -62,8 +52,8 @@ body.news {
 
 .graphic {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-bottom-color: rgba(255,255,255,0);
   background-position: center;
   background-repeat: no-repeat;
@@ -85,14 +75,14 @@ body.news {
 .graphic:focus {
   border-bottom-color: rgba(255,255,255,0);
   opacity: 1;
-  filter: alpha(opacity=30);
+  filter: alpha(opacity=100);
 }
 
 .graphic.tw {
-  background-image: url(../media/graphic-icon-twitter.png);
-  background-size: 50px !important;
+  background-image: url(/media/graphic-icon-twitter.jpg);
+  background-size: 30px;
 }
 .graphic.fb {
-  background-image: url(../media/graphic-icon-facebook.png);
-  background-size: 50px !important;
+  background-image: url(/media/graphic-icon-facebook.jpg);
+  background-size: 30px;
 }

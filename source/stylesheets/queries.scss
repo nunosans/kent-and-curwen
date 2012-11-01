@@ -114,6 +114,28 @@
       padding: 0 10%;
     }
   }
+  body.news {
+    padding-top: 100px;
+    .article {
+      padding-bottom: 50px;
+      .text {
+        width: 90%;
+        margin: 70px 5% 35px;
+      }
+      .images {
+        margin: 0;
+        width: 100%;
+        img {
+          width: 90% !important;
+          margin: 3% 5%;
+        }
+        .col {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
 // Retina Screens
@@ -126,5 +148,11 @@
   }
   .spinner h6 {
     background-image: url(../media/graphic-spinner-hires.gif);
+  }
+  .graphic.tw {
+    background-image: url(../media/graphic-icon-twitter-hires.jpg);
+  }
+  .graphic.fb {
+    background-image: url(../media/graphic-icon-facebook-hires.jpg);
   }
 }

@@ -19,21 +19,10 @@ $(document).ready(function() {
   body.height($(window).height());
 
   // If the screen is in portrait, add class portrait.
-  if (body.height() > (body.width() * 0.7)) {
+  if ($(window).height() > ($(window).width() * 0.7)) {
     body.addClass('portrait');
   } else {
     body.addClass('landscape');
-  }
-
-  // Call modules.
-  dropdowns('body.stores > ul');
-
-  // Apply sticky section headers.
-  if (body.hasClass('news')) {
-    body.stickySectionHeaders({
-      stickyClass: 'sticky',
-      headlineSelector: '.text'
-    });
   };
 
   // Apply parallax effect.
@@ -49,6 +38,18 @@ $(document).ready(function() {
   $('#nav span.current').click(function() {
     body.animate({scrollTop : 0}, 1200);
   });
+
+  // Calculate the size of news header images.
+  function resizeArticlesCover() {
+    body.find('div.article div.images > img').each(function() {
+      var width = $(this).siblings('.col').eq(0).outerWidth(true);
+      $(this).width(width * 3 - 4);
+    });
+  };
+
+  if (body.hasClass('news') && body.hasClass('desktop')) {
+    resizeArticlesCover();
+  };
 
   $('#nav').hover(
     function() {
@@ -79,13 +80,17 @@ $(document).ready(function() {
     body.height($(window).height());
 
     // Check if the screen is now in portrait.
-    if (body.height() > (body.width() * 0.71)) {
+    if ($(window).height() > ($(window).width() * 0.71)) {
       body.addClass('portrait');
       body.removeClass('landscape');
     } else {
       body.addClass('landscape');
       body.removeClass('portrait');
-    }
+    };
+
+    if (body.hasClass('news') && body.hasClass('desktop')) {
+      resizeArticlesCover();
+    };
   });
 
   $(window).scroll(function(){
