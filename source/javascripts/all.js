@@ -15,15 +15,15 @@ $(document).ready(function() {
     body.addClass('desktop');
   };
 
-  // Calculate correct height of the body.
-  body.height($(window).height());
-
   // If the screen is in portrait, add class portrait.
   if ($(window).height() > ($(window).width() * 0.7)) {
     body.addClass('portrait');
   } else {
     body.addClass('landscape');
   };
+
+  // Calculate correct height of the body.
+  body.height($(window).height());
 
   // Apply parallax effect.
   if (body.hasClass('desktop')) {
@@ -94,11 +94,13 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function(){
-    if ($(window).scrollTop() <= 50) {
-      $('#nav').addClass('top');
-    } else {
-      $('#nav').removeClass('top');
-    };
+    if (body.hasClass('desktop')) {
+      if ($(window).scrollTop() <= 50) {
+        $('#nav').addClass('top');
+      } else {
+        $('#nav').removeClass('top');
+      };
+    }
   })
 
 });
