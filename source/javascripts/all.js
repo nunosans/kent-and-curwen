@@ -51,6 +51,20 @@ $(document).ready(function() {
     resizeArticlesCover();
   };
 
+  function expandableMenus() {
+    body.find('.expandable-menus').find('h3, h4').each(function() {
+      var menus = $(this).siblings('ul');
+      menus.hide();
+      $(this).click(function() {
+        menus.slideToggle('slow');
+      });
+    })
+  };
+
+  if (body.hasClass('stores')) {
+    expandableMenus();
+  };
+
   $('#nav').hover(
     function() {
       $(this).addClass('hover');

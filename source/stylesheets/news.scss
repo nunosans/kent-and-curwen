@@ -32,6 +32,7 @@ body.news {
     }
   }
 }
+
 .article {
   float: left;
   ul {
@@ -40,13 +41,6 @@ body.news {
       display: inline-block;
       margin: 5px;
     }
-  }
-}
-.article.sticky {
-  .text {
-    position: fixed;
-    top: 0;
-    left: 0;
   }
 }
 

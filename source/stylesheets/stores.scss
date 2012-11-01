@@ -26,16 +26,14 @@ body.stores {
     }
   }
 
-  > ul {
-    margin: 160px 5%;
+  ul.expandable-menus {
+    list-style-type: none;
+    margin: 70px 5% 0;
+    padding-bottom: 140px;
     width: 90%;
     > li {
       width: 100%;
     }
-  }
-
-  ul {
-    list-style-type: none;
     li {
       overflow: hidden;
       margin-bottom: 20px;
@@ -108,7 +106,12 @@ li.closed {
   height: 40px !important;
 }
 
-body.stores #nav {
-  position: absolute;
-  height: 200px;
+body.stores.portrait {
+  .screen.cover {
+    margin: 0;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
 }

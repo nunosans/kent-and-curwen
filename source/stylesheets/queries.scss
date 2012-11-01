@@ -4,14 +4,9 @@
     zoom: 0.65;
     -moz-transform: scale(0.65);
   }
-  body.parallax.portrait {
-    .screen {
-      // padding: 0 0 -150px 0;
-    }
-  }
   body.parallax.landscape {
     .screen {
-      margin: 0 0 200px 0;
+      margin: 0 0 150px 0;
     }
   }
   body.mobile {
@@ -47,6 +42,13 @@
       zoom: 0.25;
       -moz-transform: scale(0.25);
       top: 70%;
+    }
+  }
+  body.stores {
+    .addresses {
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2;
     }
   }
 }
@@ -134,6 +136,13 @@
           margin: 0;
         }
       }
+    }
+  }
+  body.stores {
+    .addresses {
+      -webkit-column-count: 1;
+         -moz-column-count: 1;
+              column-count: 1;
     }
   }
 }
